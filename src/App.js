@@ -8,10 +8,28 @@ import Experience from "./components/Experience";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+// import Navbar from './components/Navbar';
+// import React, { useState, useEffect } from 'react';
 
 
 function App() {
+
+  // const [Navbar, setnavbar] = useState();
+
+  // // let showNav = Navbar;
+  // // let sticky = fixheader.offsetTop;
+  
+  // window.addEventListener("scroll", () => {
+  //     if (window.pageYOffset > sticky) {
+  //         fixheader.classList.add("sticky");
+  //     } else {
+  //         fixheader.classList.remove("sticky");
+  //     }
+  // })
+
+
+
   return (
     <>
       <Particles

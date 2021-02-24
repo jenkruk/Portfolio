@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
                         <div className="d-flex">
-                            <a href="mailto: jenkruk@gmail.com" rel="noreferrer" target="_blank">jenkruk@gmail.com</a>
+                            <a href="mailto: jenkruk@gmail.com" rel="noreferrer" target="_blank">contactkruk@gmail.com</a>
                         </div>
                         <div className="d-flex">
                             <p>Mesa, AZ</p>

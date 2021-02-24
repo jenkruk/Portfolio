@@ -59,8 +59,6 @@ nav ul li {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
   color: var(--white) !important;
-  /* border-top: 0.18rem solid transparent; */
-  /* border-bottom: 0.15rem solid transparent; */
 }
 
 /* @media(max-width: 768px) {
@@ -77,7 +75,6 @@ nav ul li {
 .navbar-nav > li > a:hover {
   text-decoration: overline underline;
   text-underline-position: under;
-  transition: text-decoration 2s ease-in-out;
 }
 
 /* ******************** HEADER ************************ */
@@ -225,7 +222,6 @@ nav ul li {
   width: 60%;
   font-size: .95rem;
   color: grey;
-  /* font-style: italic; */
   letter-spacing: 2px;
 }
 
