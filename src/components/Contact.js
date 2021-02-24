@@ -57,10 +57,10 @@ const Contact = () => {
                     name="name"
                     ref={
                         register({
-                            required: "Please enter your name",
+                            required: " - Please enter your name - ",
                             maxLength: {
                                 value: 50,
-                                message: "Please enter a name with fewer than 50 characters"
+                                message: " - Please enter a name with fewer than 50 characters - "
                             }
                         })
                     }
@@ -79,7 +79,7 @@ const Contact = () => {
                     name="phone"
                     ref={
                         register({
-                            required: "Please enter your phone number",
+                            required: " - Please enter your phone number - ",
                         })
                     }
                     />
@@ -97,7 +97,7 @@ const Contact = () => {
                     name="email"
                     ref={
                         register({
-                            required: "Invalid email",
+                            required: "- Please enter a valid email address -",
                             pattern: {
                                 // value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 
@@ -119,7 +119,7 @@ const Contact = () => {
                     name="subject"
                     ref={
                         register({
-                            required: "Please enter a subject",
+                            required: " - Please enter a subject - ",
                         })
                     }
                     />
@@ -129,7 +129,7 @@ const Contact = () => {
                 <div className="col-md-6 col-xs-12">
                     {/* MESSAGE  */}
                     <div className="text-center">
-                    <span className="error-message py-1">
+                    <span className="error-message">
                     {errors.message && errors.message.message}
                     </span>
                     <textarea 
@@ -139,13 +139,13 @@ const Contact = () => {
                     name="message"
                     ref={
                         register({
-                            required: "Enter your message here",
+                            required: " - Please enter your message here - ",
                         })
                     }
                     />
                     <div className="line"></div>
                     </div>
-                    <button className="btn-main-offer contact-btn" type="submit" value="send">Contact Me</button>
+                    <button className="btn-main-offer contact-btn" type="submit" value="send">Send Message</button>
                 </div>
                 </div>
                 </form>

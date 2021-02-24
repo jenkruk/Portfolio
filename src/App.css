@@ -4,38 +4,32 @@ font-family: 'Raleway', sans-serif; */
 
 
 :root {
-  /* universal */
   --white: #ffffff;
   --light-grey: #f4f4f4;
   --dark-grey: #666666;
   --dark: rgb(52, 58, 64);
-
-  /* muted neutral vintage palette */
-  /* https://www.etsy.com/listing/943240421/muted-neutral-vintage-coloured-tissue?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_us_ps-b-craft_supplies_and_tools-canvas_and_surfaces-paper-tissue_paper&utm_custom1=_k_Cj0KCQiA7NKBBhDBARIsAHbXCB6fd02f0qa-R69XW49Ml_Rr4l5GCyNzKRlOua8bL_l8Q7zmGhVWhasaAgMPEALw_wcB_k_&utm_content=go_11505663052_117861160968_476160637804_pla-295462060507_c__943240421_109010823&utm_custom2=11505663052&gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB6fd02f0qa-R69XW49Ml_Rr4l5GCyNzKRlOua8bL_l8Q7zmGhVWhasaAgMPEALw_wcB */
-  /* --light-steel: #9FACB5; */
   --light-steel: #B3C7CE;
   --steel: #607A87;
   --sage: #8FA35D;
   --terracotta: #CC5329;
   --cornflower: #F6BC60;
   --neutral: #F6F6F6;
-  --title: #606B80;
-
-
 }
 
 body {
   font-family: 'Open Sans Condensed', sans-serif !important;
   color: var(--dark-grey);
   font-size: 1.1rem !important;
+  letter-spacing: 1px;
 }
 
 /* ******************** NAVBAR ************************ */
 
 .navbar {
   position: fixed;
-  z-index: 999;
+  z-index: 100;
   height: 7vh;
+  /* visibility: hidden;  */
 }
 
 nav {
@@ -43,10 +37,10 @@ nav {
   background-color: var(--light-steel);
 }
 
-.logo {
+/* .logo {
   width: 19.25rem;
-  /* margin-top: -20px; */
-}
+  margin-top: -20px;
+} */
 
 /* **************** Menu Links *********************** */
 
@@ -64,7 +58,7 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: whitesmoke !important;
+  color: var(--white) !important;
   /* border-top: 0.18rem solid transparent; */
   /* border-bottom: 0.15rem solid transparent; */
 }
@@ -75,14 +69,15 @@ nav ul li {
   }
 } */
 
-/* .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-color: var(--dark-grey);
-  transition: 0.5s;
-} */
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  text-decoration: overline underline;
+  text-underline-position: under;
+}
 
 .navbar-nav > li > a:hover {
-  border-bottom: .18rem solid var(--dark-grey);
-  transition: 0.5s;
+  text-decoration: overline underline;
+  text-underline-position: under;
+  transition: text-decoration 2s ease-in-out;
 }
 
 /* ******************** HEADER ************************ */
@@ -93,6 +88,7 @@ nav ul li {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  color: var(--steel);
 }
 
 .main-info {
@@ -110,9 +106,31 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--dark-blue);
   text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
+  font-size: 4rem !important;
+  letter-spacing: 3px;
+}
+
+.main-info h2 {
+  text-transform: uppercase;
+  font-size: 1.75rem !important;
+}
+
+.headerMenu ul li{
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-top: 3vh;
+}
+
+.headerMenu ul li a{
+  color: var(--steel);
+  font-weight: bolder;
+}
+
+.headerMenu ul li a:hover{
+  text-decoration: overline underline;
+  text-underline-position: under;
 }
 
 /* ********************** MEDIA ********************** */
@@ -138,7 +156,7 @@ nav ul li {
 .typed-text {
   font-size: 2rem;
   margin-top: .25rem;
-  color: var(--dark);
+  color: var(--steel);
 }
 
 @media(max-width: 768px) {
@@ -172,6 +190,8 @@ nav ul li {
 .aboutMe {
  height: 40vh;
  margin-top: 8vh;
+ overflow: hidden;
+ height: auto;
 }
 
 
@@ -179,7 +199,8 @@ nav ul li {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
+  padding-top: 3vh;
 }
 
 .profile-img {
@@ -187,7 +208,7 @@ nav ul li {
   height: 18rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid var(--steel);
+  border: 4px double var(--steel);
   transition: transform .8s ease-in-out;
   display: inline;
 }
@@ -196,10 +217,23 @@ nav ul li {
   transform: rotate(720deg);
 }
 
+.koalaRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto !important;
+  width: 60%;
+  font-size: .95rem;
+  color: grey;
+  /* font-style: italic; */
+  letter-spacing: 2px;
+}
+
 .about-heading {
   color: var(--steel);
   text-transform: uppercase;
 }
+
 
 @media(max-width: 468px) {
   .profile-img {
@@ -222,6 +256,10 @@ nav ul li {
   text-transform: uppercase;
 }
 
+.skillsTagline {
+  letter-spacing: 2px;
+}
+
 .skills .circle {
   position: relative;
   margin: 0.375rem auto;
@@ -234,19 +272,19 @@ nav ul li {
   position: relative;
 }
 
-.pinkCircle {
+.steelCircle {
   background: var(--steel);
 }
 
-.lightTurquoiseCircle {
+.sageCircle {
   background: var(--sage);
 }
 
-.darkTurquoiseCircle {
+.terracottaCircle {
   background: var(--terracotta);
 }
 
-.orangeCircle {
+.cornflowerCircle {
   background: var(--cornflower);
 }
 
@@ -267,8 +305,8 @@ nav ul li {
 
 /* HOVER EFFECTS */
 
-/* Pink circles */
-.skills .pinkCircle::after, .skills .pinkCircle::before {
+/* steel circles */
+.skills .steelCircle::after, .skills .steelCircle::before {
   border: 3px double var(--steel);
   border-radius: 50%;
   content: "";
@@ -280,18 +318,16 @@ nav ul li {
   transition: transform 0.3s ease;
 }
 
-.skills .pinkCircle:hover::after {
+.skills .steelCircle:hover::after {
   transform: translate(-7px, -7px);
 }
 
-.skills .pinkCircle:hover::before {
+.skills .steelCircle:hover::before {
   transform: translate(-14px, -14px);
 }
 
-
-/* light Turquoise circles */
-
-.skills .lightTurquoiseCircle::after, .skills .lightTurquoiseCircle::before {
+/* sage circles */
+.skills .sageCircle::after, .skills .sageCircle::before {
   border: 3px solid var(--sage);
   border-radius: 50%;
   content: "";
@@ -303,22 +339,18 @@ nav ul li {
   transition: transform 0.3s ease, height 0.3s ease;
 }
 
-.skills .lightTurquoiseCircle:hover::after {
+.skills .sageCircle:hover::after {
   transform: translate(.75rem, 0);
   height: 20%;
 }
 
-.skills .lightTurquoiseCircle:hover::before {
+.skills .sageCircle:hover::before {
   transform: translate(-.75rem, 0);
   height: 20%;
 }
 
-/* .skills .lightTurquoiseCircle:hover::before {
-  transform: translate(7px, -7px);
-} */
-
-/* Orange circles */
-.skills .orangeCircle::after {
+/* cornflower circles */
+.skills .cornflowerCircle::after {
   border: 3px solid var(--cornflower);
   border-radius: 50%;
   content: "";
@@ -330,7 +362,7 @@ nav ul li {
   transition: width 0.2s, height 0.2s, left 0.2s, bottom 0.2s, border-style 0.3s ease;
 }
 
-.skills .orangeCircle:hover::after {
+.skills .cornflowerCircle:hover::after {
   border-style: double;
   width: 3.85rem;
   height: 3.85rem;
@@ -338,23 +370,9 @@ nav ul li {
   bottom: -6px;
 }
 
-/* .skills .orangeCircle:hover::before {
-  width: 4.5rem;
-  height: 4.5rem;
-  left: -10px;
-  bottom: -10px;
-} */
 
-/* .skills .orangeCircle:hover::after {
-  transform: translate(-7px, -7px);
-} */
-
-/* .skills .orangeCircle:hover::before {
-  transform: translate(7px, 7px);
-} */
-
-/* dark Turquoise circles */
-.skills .darkTurquoiseCircle::after, .skills .darkTurquoiseCircle::before {
+/* terracotta circles */
+.skills .terracottaCircle::after, .skills .terracottaCircle::before {
   border: 3px solid var(--terracotta);
   border-radius: 50%;
   content: "";
@@ -366,11 +384,11 @@ nav ul li {
   transition: transform 0.3s ease;
 }
 
-.skills .darkTurquoiseCircle:hover::after {
+.skills .terracottaCircle:hover::after {
   transform: translate(-7px, 7px);
 }
 
-.skills .darkTurquoiseCircle:hover::before {
+.skills .terracottaCircle:hover::before {
   transform: translate(7px, -7px);
 }
 
@@ -401,7 +419,7 @@ nav ul li {
   margin-left: -0.0625rem;
   width: 0.125rem;
   height: 100%;
-  background: var(--sage);
+  background: var(--light-steel);
 }
 
 .timeline-block {
@@ -424,9 +442,10 @@ nav ul li {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 0.3125rem solid var(--steel);
+  border: 0.35rem solid var(--steel);
   background: var(--cornflower);
   margin-top: 0.625rem;
+  z-index: 1;
 }
 
 .timeline-content {
@@ -492,17 +511,17 @@ nav ul li {
 
 /* ********************** Portfolio Thumbnails ********************** */
 
-.overflow {
+.overlay {
   position: absolute;
-  /* opacity: 0; */
-  background: purple;
+  opacity: 0;
+  background: var(--white);
   width: 15rem;
-  /* height: 100%; */
+  height: 100%;
   top: 0;
   cursor: pointer;
 }
 
-.portfolio-image-box:hover .overflow {
+.portfolio-image-box:hover .overlay {
   opacity: 60%;
   transition: 0.3s ease-in-out;
 }
@@ -512,7 +531,7 @@ nav ul li {
   opacity: 0;
   margin-left: -8rem;
   margin-top: 3.5rem;
-  color: var(--sage);
+  color: var(--steel);
   font-size: 2rem;
 }
 
@@ -524,21 +543,23 @@ nav ul li {
 .portfolio-image-box:hover .portfolio-icon {
   opacity: 100%;
   border-radius: 5px;
-  background-color: white;
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
 
-.portfolio-wrapper .container .image-box-wrapper .gif-giver-image-box .portfolio-image {
+.gif-giver-image-box .portfolio-image {
   height: 126px;
   width: 100px;
-  padding: 8px ;
 }
 
 .portfolio-wrapper .container .image-box-wrapper .gif-giver-image-box{
-  width: 236px;
+  width: 250px;
   border: 5px double var(--light-steel);
   text-align: center;
+}
+
+.portfolio-wrapper .container .image-box-wrapper .gif-giver-image-box .portfolio-icon{
+  justify-content: center;
 }
 
 /* ********************** POP-UP BOX ********************** */
@@ -706,7 +727,7 @@ nav ul li {
 }
 
 .contact textarea {
-  height: 12.2rem !important;
+  height: 12.6rem !important;
 }
 
 .contact-btn {
@@ -723,10 +744,10 @@ nav ul li {
 }
 
 .contact-btn:hover {
-  background-color: var(--steel);
+  background-color: var(--sage);
   color: var(--white);
   transition: .2s ease-in-out;
-  border-color: var(--steel);
+  border-color: var(--sage);
 }
 
 .line {
@@ -734,7 +755,7 @@ nav ul li {
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--steel);
+  background: var(--terracotta);
   display: inline-block;
 }
 
@@ -753,7 +774,7 @@ textarea.form-control {
 
 .error-message {
   color: var(--white);
-  background: var(--steel);
+  background: var(--light-steel);
 }
 
 .success-message {
