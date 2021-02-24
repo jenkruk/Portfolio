@@ -28,14 +28,14 @@ function App() {
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#607A87",
+            color: "#B3C7CE",
             opacity: 1,
             width: 1
           },
           shape: {
-            type: "circle",
+            type: "star",
             stroke: {
-              width: 6,
+              width: 3,
               // color: "#f9ab00"
               color: "#F6BC60"
             }

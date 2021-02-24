@@ -35,10 +35,10 @@ const Contact = () => {
 
 
     return (
-        <div className="contact" id="contact">
+        <div className="contact">
             <div className="text-center">
-                <h2 id="contact">contact me</h2>
-                <p className="text-muted font-italic">Let's connect!  Use this form to send me an email and I will get back to you shortly!</p>
+                <h2>contact me</h2>
+                <p className="text-muted font-italic"  id="contact">Let's connect!  Use this form to send me an email and I will get back to you shortly!</p>
                 <span className="success-message text-muted font-italic">{successMessage}</span>
             </div>
         <div className="container">

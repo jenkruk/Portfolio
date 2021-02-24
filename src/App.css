@@ -4,27 +4,21 @@ font-family: 'Raleway', sans-serif; */
 
 
 :root {
-  --dark-pink: #E83E8C;
-  --lighter-pink: #f072ad;
-  --light-turquoise: #009E98;
-  --dark-turquoise: #006766;
-  --bright-orange: #f9ab00;
   /* universal */
   --white: #ffffff;
   --light-grey: #f4f4f4;
   --dark-grey: #666666;
   --dark: rgb(52, 58, 64);
-  --light-blue: #EDF2F6;
-  --dark-blue: #3A4B58;
 
   /* muted neutral vintage palette */
   /* https://www.etsy.com/listing/943240421/muted-neutral-vintage-coloured-tissue?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_us_ps-b-craft_supplies_and_tools-canvas_and_surfaces-paper-tissue_paper&utm_custom1=_k_Cj0KCQiA7NKBBhDBARIsAHbXCB6fd02f0qa-R69XW49Ml_Rr4l5GCyNzKRlOua8bL_l8Q7zmGhVWhasaAgMPEALw_wcB_k_&utm_content=go_11505663052_117861160968_476160637804_pla-295462060507_c__943240421_109010823&utm_custom2=11505663052&gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB6fd02f0qa-R69XW49Ml_Rr4l5GCyNzKRlOua8bL_l8Q7zmGhVWhasaAgMPEALw_wcB */
-  --light-steel: #9FACB5;
+  /* --light-steel: #9FACB5; */
+  --light-steel: #B3C7CE;
   --steel: #607A87;
   --sage: #8FA35D;
   --terracotta: #CC5329;
   --cornflower: #F6BC60;
-  --neutral-bkgrnd: #F6F6F6;
+  --neutral: #F6F6F6;
   --title: #606B80;
 
 
@@ -128,7 +122,7 @@ nav ul li {
   }
   .header-wrapper {
     background-image: none;
-    background-color: var(--neutral-bkgrnd);
+    background-color: var(--neutral);
   }
 
  }
@@ -199,7 +193,7 @@ nav ul li {
 }
 
 .profile-img:hover {
-  transform: rotate(360deg);
+  transform: rotate(720deg);
 }
 
 .about-heading {
@@ -218,8 +212,9 @@ nav ul li {
 .skills {
   text-align: center;
   padding-top: 2rem;
-  background: var(--neutral-bkgrnd);
+  background: var(--neutral);
   top: 0;
+  overflow: hidden;
 }
 
 .skills h2 {
@@ -262,6 +257,7 @@ nav ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 5;
 }
 
 .skillsLogo {
@@ -480,13 +476,12 @@ nav ul li {
 }
 
 .portfolio-wrapper {
-  background: var(--neutral-bkgrnd);
+  background: var(--neutral);
   padding: 3rem 0;
 }
 
 .portfolio-image {
   width: 15rem;
-  border: 2px solid var(--light-steel);
   padding: 0.5rem;
 }
 
@@ -499,12 +494,11 @@ nav ul li {
 
 .overflow {
   position: absolute;
-  opacity: 0;
-  background: var(--neutral-bkgrnd);
+  /* opacity: 0; */
+  background: purple;
   width: 15rem;
-  height: 100%;
+  /* height: 100%; */
   top: 0;
-  border: 1px solid var(--steel);
   cursor: pointer;
 }
 
@@ -517,15 +511,34 @@ nav ul li {
   position: absolute;
   opacity: 0;
   margin-left: -8rem;
-  margin-top: 4.5rem;
-  color: var(--steel);
+  margin-top: 3.5rem;
+  color: var(--sage);
   font-size: 2rem;
 }
 
+.portfolio-image-box {
+  background-color: var(--white);
+  border: 5px double var(--light-steel);
+}
+
 .portfolio-image-box:hover .portfolio-icon {
-  opacity: 70%;
+  opacity: 100%;
+  border-radius: 5px;
+  background-color: white;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+}
+
+.portfolio-wrapper .container .image-box-wrapper .gif-giver-image-box .portfolio-image {
+  height: 126px;
+  width: 100px;
+  padding: 8px ;
+}
+
+.portfolio-wrapper .container .image-box-wrapper .gif-giver-image-box{
+  width: 236px;
+  border: 5px double var(--light-steel);
+  text-align: center;
 }
 
 /* ********************** POP-UP BOX ********************** */
@@ -545,11 +558,11 @@ nav ul li {
 
 .hyper-link {
   cursor: pointer;
-  color: var(--light-turquoise);
+  color: var(--sage);
 }
 
 .hyper-link:hover {
-  color: var(--bright-orange);
+  color: var(--cornflower);
 }
 
 /* ********************** MEDIA ********************** */
@@ -599,7 +612,7 @@ nav ul li {
   text-align: center;
   max-width: 53.125rem;
   margin: 0 auto 2rem auto;
-  background: var(--steel);
+  background: var(--light-steel);
 }
 
 .myCarousel {
@@ -649,8 +662,9 @@ nav ul li {
 /* ********************** CONTACT ********************** */
 
 .contact {
-  background: var(--neutral-bkgrnd);
+  background: var(--neutral);
   padding: 3rem 0;
+  height: 75vh;
 }
 
 .contact h2 {

@@ -1,12 +1,18 @@
 import React from "react";
-import projectOne from "../images/projects/imgOne.jpg";
-import projectTwo from "../images/projects/imgTwo.jpg";
-import projectThree from "../images/projects/imgThree.jpg";
-import projectFour from "../images/projects/imgFour.jpg";
-import projectFive from "../images/projects/imgFive.jpg";
-import projectSix from "../images/projects/imgSix.jpg";
+import projectOne from "../images/projectPics/qsm.jpg";
+import projectTwo from "../images/projectPics/zoo.jpg";
+import projectThree from "../images/projectPics/googleBooks.jpg";
+import projectFour from "../images/projectPics/recipe.jpg";
+import projectFive from "../images/projectPics/friendFinder.jpg";
+import projectSix from "../images/projectPics/taskMgr.jpg";
 import projectSeven from "../images/projects/imgSeven.jpg";
-import projectEight from "../images/projects/imgEight.jpg";
+// import currentTime from "./currentTime";
+import projectEight from "../images/projectPics/homes.jpg";
+import projectNine from "../images/projectPics/giftStack.gif";
+import projectTen from "../images/projectPics/travelTrivia.jpg";
+import projectEleven from "../images/projectPics/crystals.jpg";
+import projectTwelve from "../images/projectPics/treeOfLives.jpg";
+
 // FONTAWESOME IMPORTS
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearchPlus } from "@fortawesome/free-solid-svg-icons"
@@ -20,7 +26,7 @@ const Portfolio = () => {
     const openPopupboxProjectOne = () => {
         const content = (
             <>
-    <img className = "portfolio-image-popupbox" src={projectOne} alt="Project One"/>
+    <img className = "portfolio-image-popupbox" src={projectOne} alt="Queen St. Market"/>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
     <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
     <br/>
@@ -33,7 +39,7 @@ const Portfolio = () => {
         config: {
           titleBar: {
             enable: true,
-            text: "Project One"
+            text: "Queen St. Market"
           },
           fadeIn: true,
           fadeInSpeed: 500
@@ -45,7 +51,7 @@ const Portfolio = () => {
     const popupboxConfigProjectOne = {
         titleBar: {
             enable: true,
-            text: "Project One"
+            text: "Queen St. Market"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -55,7 +61,7 @@ const Portfolio = () => {
     const openPopupboxProjectTwo = () => {
         const content = (
           <>
-            <img className = "portfolio-image-popupbox" src={projectTwo} alt="Project Two"/>
+            <img className = "portfolio-image-popupbox" src={projectTwo} alt="Zootopia"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident        quisrecusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
             <br/>
@@ -68,7 +74,7 @@ const Portfolio = () => {
         config: {
           titleBar: {
             enable: true,
-            text: "Project Two"
+            text: "Zootopia"
           },
           fadeIn: true,
           fadeInSpeed: 500
@@ -79,7 +85,7 @@ const Portfolio = () => {
     const popupboxConfigProjectTwo = {
         titleBar: {
             enable: true,
-            text: "Project Two"
+            text: "Zootopia"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -89,7 +95,7 @@ const Portfolio = () => {
     const openPopupboxProjectThree = () => {
         const content = (
           <>
-            <img className = "portfolio-image-popupbox" src={projectThree} alt="Project Three"/>
+            <img className = "portfolio-image-popupbox" src={projectThree} alt="Google Books"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
             <br/>
@@ -102,7 +108,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Three"
+                text: "Google Books"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -113,7 +119,7 @@ const Portfolio = () => {
     const popupboxConfigProjectThree = {
         titleBar: {
             enable: true,
-            text: "Project Three"
+            text: "Google Books"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -123,7 +129,7 @@ const Portfolio = () => {
     const openPopupboxProjectFour = () => {
         const content = (
           <>
-            <img className = "portfolio-image-popupbox" src={projectFour} alt="Project Four"/>
+            <img className = "portfolio-image-popupbox" src={projectFour} alt="Recipe Scraper"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
             <br/>
@@ -136,7 +142,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Four"
+                text: "Recipe Scraper",
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -147,7 +153,7 @@ const Portfolio = () => {
     const popupboxConfigProjectFour = {
         titleBar: {
             enable: true,
-            text: "Project Four"
+            text: "Recipe Scraper"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -157,7 +163,7 @@ const Portfolio = () => {
     const openPopupboxProjectFive = () => {
         const content = (
           <>
-            <img className = "portfolio-image-popupbox" src={projectFive} alt="Project Five"/>
+            <img className = "portfolio-image-popupbox" src={projectFive} alt="Friend Finder"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
             <br/>
@@ -170,7 +176,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Five"
+                text: "Friend Finder"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -181,7 +187,7 @@ const Portfolio = () => {
     const popupboxConfigProjectFive = {
         titleBar: {
             enable: true,
-            text: "Project Five"
+            text: "Friend Finder"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -191,7 +197,7 @@ const Portfolio = () => {
     const openPopupboxProjectSix = () => {
         const content = (
           <>
-            <img className = "portfolio-image-popupbox" src={projectSix} alt="Project Six"/>
+            <img className = "portfolio-image-popupbox" src={projectSix} alt="Task Manager"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
             <br/>
@@ -204,7 +210,7 @@ const Portfolio = () => {
             config: {
               titleBar: {
                 enable: true,
-                text: "Project Six"
+                text: "Task Manager"
               },
               fadeIn: true,
               fadeInSpeed: 500
@@ -215,7 +221,7 @@ const Portfolio = () => {
         const popupboxConfigProjectSix = {
           titleBar: {
               enable: true,
-              text: "Project Six"
+              text: "Task Manager"
           },
           fadeIn: true,
           fadeInSpeed: 500
@@ -225,7 +231,7 @@ const Portfolio = () => {
 const openPopupboxProjectSeven = () => {
   const content = (
     <>
-      <img className = "portfolio-image-popupbox" src={projectSeven} alt="Project Seven"/>
+      <img className = "portfolio-image-popupbox" src={projectSeven} alt="Train Scheduler"/>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
       <br/>
@@ -238,7 +244,7 @@ const openPopupboxProjectSeven = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Project Seven"
+          text: "Train Scheduler"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -249,7 +255,7 @@ const openPopupboxProjectSeven = () => {
   const popupboxConfigProjectSeven = {
     titleBar: {
         enable: true,
-        text: "Project Seven"
+        text: "Train Scheduler"
     },
     fadeIn: true,
     fadeInSpeed: 500
@@ -259,7 +265,7 @@ const openPopupboxProjectSeven = () => {
 const openPopupboxProjectEight = () => {
   const content = (
     <>
-      <img className = "portfolio-image-popupbox" src={projectEight} alt="Project Eight"/>
+      <img className = "portfolio-image-popupbox" src={projectEight} alt="Home Finder"/>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
       <br/>
@@ -272,7 +278,7 @@ const openPopupboxProjectEight = () => {
       config: {
         titleBar: {
           enable: true,
-          text: "Project Eight"
+          text: "Home Finder"
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -283,11 +289,151 @@ const openPopupboxProjectEight = () => {
   const popupboxConfigProjectEight = {
     titleBar: {
         enable: true,
-        text: "Project Eight"
+        text: "Home Finder"
     },
     fadeIn: true,
     fadeInSpeed: 500
 }
+
+    // projectNine
+    const openPopupboxProjectNine = () => {
+      const content = (
+          <>
+  <img className = "portfolio-image-popupbox gifGiver" src={projectNine} alt="Gif-Giver"/>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <br/>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  </>
+  )
+  PopupboxManager.open({ content })
+  PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Gif-Giver"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      },
+    });
+  }
+
+
+  const popupboxConfigProjectNine = {
+      titleBar: {
+          enable: true,
+          text: "Gif-Giver"
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+      }
+
+    // projectTen
+    const openPopupboxProjectTen = () => {
+      const content = (
+          <>
+  <img className = "portfolio-image-popupbox" src={projectTen} alt="Travel Trivia"/>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <br/>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  </>
+  )
+  PopupboxManager.open({ content })
+  PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Travel Trivia"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      },
+    });
+  }
+
+
+  const popupboxConfigProjectTen = {
+      titleBar: {
+          enable: true,
+          text: "Travel Trivia"
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+      }
+
+  // projectEleven
+    const openPopupboxProjectEleven = () => {
+      const content = (
+          <>
+  <img className = "portfolio-image-popupbox" src={projectEleven} alt="Crystal Collector"/>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <br/>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  </>
+  )
+  PopupboxManager.open({ content })
+  PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Crystal Collector"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      },
+    });
+  }
+
+
+  const popupboxConfigProjectEleven = {
+      titleBar: {
+          enable: true,
+          text: "Crystal Collector"
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+      }
+
+  // projectTwelve
+    const openPopupboxProjectTwelve = () => {
+      const content = (
+          <>
+  <img className = "portfolio-image-popupbox" src={projectTwelve} alt="Tree of Lives"/>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <br/>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  </>
+  )
+  PopupboxManager.open({ content })
+  PopupboxManager.update({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: "Tree of Lives"
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      },
+    });
+  }
+
+
+  const popupboxConfigProjectTwelve = {
+      titleBar: {
+          enable: true,
+          text: "Tree of Lives"
+      },
+      fadeIn: true,
+      fadeInSpeed: 500
+      }
 
     return (
         <div className="portfolio-wrapper">
@@ -295,49 +441,73 @@ const openPopupboxProjectEight = () => {
                 <h2 className="text-uppercase text-center py-5" id="portfolio">portfolio</h2>
                 <div className="image-box-wrapper row justify-content-center">
                     <div className="portfolio-image-box" onClick={openPopupboxProjectOne}>
-                        <img className = "portfolio-image" src={projectOne} alt="Project One"/>
+                        <img className = "portfolio-image" src={projectOne} alt="Queen St. Market"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectTwo}>
-                        <img className = "portfolio-image" src={projectTwo} alt="Project Two"/>
+                        <img className = "portfolio-image" src={projectTwo} alt="Zootopia"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectThree}>
-                        <img className = "portfolio-image" src={projectThree} alt="Project Three"/>
+                        <img className = "portfolio-image" src={projectThree} alt="Google Books"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectFour}>
-                        <img className = "portfolio-image" src={projectFour} alt="Project Four"/>
+                        <img className = "portfolio-image" src={projectFour} alt="Recipe Scraper"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectFive}>
-                        <img className = "portfolio-image" src={projectFive} alt="Project Five"/>
+                        <img className = "portfolio-image" src={projectFive} alt="Friend Finder"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectSix}>
-                        <img className = "portfolio-image" src={projectSix} alt="Project Six"/>
+                        <img className = "portfolio-image" src={projectSix} alt="Task Manager"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectSeven}>
-                        <img className = "portfolio-image" src={projectSeven} alt="Project Seven"/>
+                        <img className = "portfolio-image" src={projectSeven} alt="Train Scheduler"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectEight}>
-                        <img className = "portfolio-image" src={projectEight} alt="Project Eight"/>
+                        <img className = "portfolio-image" src={projectEight} alt="Home Finder"/>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                    {/* - */}
+                    <div className="portfolio-image-box gif-giver-image-box" onClick={openPopupboxProjectNine}>
+                        <img className = "portfolio-image" src={projectNine} alt="Gif-Giver"/>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                    {/* - */}
+                    <div className="portfolio-image-box" onClick={openPopupboxProjectTen}>
+                        <img className = "portfolio-image" src={projectTen} alt="Travel Trivia"/>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                    {/* - */}
+                    <div className="portfolio-image-box" onClick={openPopupboxProjectEleven}>
+                        <img className = "portfolio-image" src={projectEleven} alt="Crystal Collector"/>
+                        <div className="overflow"></div>
+                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                    </div>
+                    {/* - */}
+                    <div className="portfolio-image-box" onClick={openPopupboxProjectTwelve}>
+                        <img className = "portfolio-image" src={projectTwelve} alt="Tree of Lives"/>
                         <div className="overflow"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
@@ -351,6 +521,10 @@ const openPopupboxProjectEight = () => {
             <PopupboxContainer {...popupboxConfigProjectSix} />
             <PopupboxContainer {...popupboxConfigProjectSeven} />
             <PopupboxContainer {...popupboxConfigProjectEight} />
+            <PopupboxContainer {...popupboxConfigProjectNine} />
+            <PopupboxContainer {...popupboxConfigProjectTen} />
+            <PopupboxContainer {...popupboxConfigProjectEleven} />
+            <PopupboxContainer {...popupboxConfigProjectTwelve} />
         </div>
     )
 }
