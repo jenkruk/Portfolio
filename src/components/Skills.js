@@ -14,8 +14,8 @@ import bootstrapIcon from "../images/skills/bootstrap.png"
 
 const Skills = () => {
     return (
-        <div className="skills" id="skills">
-            <h2 className="py-5">skills</h2>
+        <div className="skills">
+            <h2 className="py-5" id="skills">skills</h2>
                 <div className="container pb-5">
                     <div className="row pb-3">
                         <div className="col-lg-3 col-md-3 col-sm-3 ">

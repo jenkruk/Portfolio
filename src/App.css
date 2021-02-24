@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap');
+/* font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Raleway', sans-serif; */
 
 
 :root {
@@ -7,33 +9,55 @@
   --light-turquoise: #009E98;
   --dark-turquoise: #006766;
   --bright-orange: #f9ab00;
+  /* universal */
   --white: #ffffff;
   --light-grey: #f4f4f4;
   --dark-grey: #666666;
   --dark: rgb(52, 58, 64);
+  --light-blue: #EDF2F6;
+  --dark-blue: #3A4B58;
+
+  /* muted neutral vintage palette */
+  /* https://www.etsy.com/listing/943240421/muted-neutral-vintage-coloured-tissue?gpla=1&gao=1&&utm_source=google&utm_medium=cpc&utm_campaign=shopping_us_ps-b-craft_supplies_and_tools-canvas_and_surfaces-paper-tissue_paper&utm_custom1=_k_Cj0KCQiA7NKBBhDBARIsAHbXCB6fd02f0qa-R69XW49Ml_Rr4l5GCyNzKRlOua8bL_l8Q7zmGhVWhasaAgMPEALw_wcB_k_&utm_content=go_11505663052_117861160968_476160637804_pla-295462060507_c__943240421_109010823&utm_custom2=11505663052&gclid=Cj0KCQiA7NKBBhDBARIsAHbXCB6fd02f0qa-R69XW49Ml_Rr4l5GCyNzKRlOua8bL_l8Q7zmGhVWhasaAgMPEALw_wcB */
+  --light-steel: #9FACB5;
+  --steel: #607A87;
+  --sage: #8FA35D;
+  --terracotta: #CC5329;
+  --cornflower: #F6BC60;
+  --neutral-bkgrnd: #F6F6F6;
+  --title: #606B80;
+
+
 }
 
 body {
-  font-family: "Roboto Condensed", sans-serif !important;
+  font-family: 'Open Sans Condensed', sans-serif !important;
+  color: var(--dark-grey);
+  font-size: 1.1rem !important;
 }
 
 /* ******************** NAVBAR ************************ */
 
+.navbar {
+  position: fixed;
+  z-index: 999;
+  height: 7vh;
+}
+
 nav {
-  z-index: 2;
-  /* background-color: var(--turquoise); */
-  background-color: var(--dark-pink);
+  /* background-color: #F2F7FA; */
+  background-color: var(--light-steel);
 }
 
 .logo {
   width: 19.25rem;
-  margin-top: -20px;
+  /* margin-top: -20px; */
 }
 
 /* **************** Menu Links *********************** */
 
 nav a.nav-link {
-  font-size: .8rem;
+  font-size: 1.1rem;
   font-weight: 300;
   letter-spacing: 0.0375px;
   cursor: pointer;
@@ -46,30 +70,24 @@ nav ul li {
 .navbar-nav > li > a {
   margin-right: 0.75rem;
   margin-left: 0.75rem;
-  color: var(--white) !important;
-  /* border-top: 0.1875rem solid var(--dark-pink); */
-  border-bottom: 0.1875rem solid var(--dark-pink);
+  color: whitesmoke !important;
+  /* border-top: 0.18rem solid transparent; */
+  /* border-bottom: 0.15rem solid transparent; */
 }
 
-.navbar-brand {
-  max-width: 17.25rem;
-  padding: 0 !important;
-  height: 6rem !important;
-}
-
-@media(max-width: 768px) {
+/* @media(max-width: 768px) {
   .navbar-brand {
     width: 7rem;
   }
-}
+} */
 
-.navbar-nav > li > a.active, .navbar-nav > li > a:focus {
-  border-bottom: 0.12rem solid var(--white);
+/* .navbar-nav > li > a.active, .navbar-nav > li > a:focus {
+  border-color: var(--dark-grey);
   transition: 0.5s;
-}
+} */
 
 .navbar-nav > li > a:hover {
-  border-bottom: 0.12rem solid var(--white);
+  border-bottom: .18rem solid var(--dark-grey);
   transition: 0.5s;
 }
 
@@ -77,7 +95,7 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url(./images/background.jpg) no-repeat;
+  background: url(./images/background4.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -86,7 +104,7 @@ nav ul li {
 .main-info {
   display: flex;
   position: absolute;
-  top: 10vh;
+  top: 30vh;
   left: 0;
   right: 0;
   bottom: 575px;
@@ -98,8 +116,9 @@ nav ul li {
 }
 
 .main-info h1 {
-  color: var(--dark);
+  color: var(--dark-blue);
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
 
 /* ********************** MEDIA ********************** */
@@ -109,7 +128,7 @@ nav ul li {
   }
   .header-wrapper {
     background-image: none;
-    background-color: lightcyan;
+    background-color: var(--neutral-bkgrnd);
   }
 
  }
@@ -138,26 +157,6 @@ nav ul li {
   }
 }
 
-/* **************** HEADER MAIN OFFER BUTTON *************** */
-
-.btn-main-offer {
-  border: 0.5px solid var(--dark);
-  text-transform: uppercase;
-  border-radius: 3px;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--dark);
-  margin: 1.25rem 2rem 2rem 2rem;
-}
-
-.btn-main-offer:hover {
-  text-decoration: none;
-  background-color: var(--dark-turquoise);
-  color: var(--white);
-  transition: .2s ease-in-out;
-  border-width: 0.5px;
-  border-color: var(--dark-turquoise);
-}
-
 /* **************** PARTICLES *************** */
 
 .tsparticles-canvas-el {
@@ -176,6 +175,12 @@ nav ul li {
 
 /* **************** ABOUT ME *************** */
 
+.aboutMe {
+ height: 40vh;
+ margin-top: 8vh;
+}
+
+
 .photo-wrap {
   display: flex;
   justify-content: center;
@@ -188,11 +193,17 @@ nav ul li {
   height: 18rem;
   border-radius: 50%;
   padding: .3rem;
-  border: 1px solid var(--light-turquoise);
+  border: 1px solid var(--steel);
+  transition: transform .8s ease-in-out;
+  display: inline;
+}
+
+.profile-img:hover {
+  transform: rotate(360deg);
 }
 
 .about-heading {
-  color: var(--light-turquoise);
+  color: var(--steel);
   text-transform: uppercase;
 }
 
@@ -207,11 +218,12 @@ nav ul li {
 .skills {
   text-align: center;
   padding-top: 2rem;
-  background: var(--light-grey);
+  background: var(--neutral-bkgrnd);
+  top: 0;
 }
 
 .skills h2 {
-  color: var(--bright-orange);
+  color: var(--steel);
   text-transform: uppercase;
 }
 
@@ -228,19 +240,19 @@ nav ul li {
 }
 
 .pinkCircle {
-  background: var(--dark-pink);
+  background: var(--steel);
 }
 
 .lightTurquoiseCircle {
-  background: var(--light-turquoise);
+  background: var(--sage);
 }
 
 .darkTurquoiseCircle {
-  background: var(--dark-turquoise);
+  background: var(--terracotta);
 }
 
 .orangeCircle {
-  background: var(--bright-orange);
+  background: var(--cornflower);
 }
 
 .skills .icon {
@@ -250,7 +262,6 @@ nav ul li {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 100;
 }
 
 .skillsLogo {
@@ -262,7 +273,7 @@ nav ul li {
 
 /* Pink circles */
 .skills .pinkCircle::after, .skills .pinkCircle::before {
-  border: 3px double var(--dark-pink);
+  border: 3px double var(--steel);
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -270,7 +281,6 @@ nav ul li {
   height: 3.12rem;
   left: 0;
   bottom: 0;
-  /* z-index: -1; */
   transition: transform 0.3s ease;
 }
 
@@ -282,14 +292,11 @@ nav ul li {
   transform: translate(-14px, -14px);
 }
 
-/* .skills .pinkCircle:hover::before {
-  transform: translate(7px, 7px);
-} */
 
 /* light Turquoise circles */
 
 .skills .lightTurquoiseCircle::after, .skills .lightTurquoiseCircle::before {
-  border: 3px solid var(--light-turquoise);
+  border: 3px solid var(--sage);
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -297,7 +304,6 @@ nav ul li {
   height: 3.12rem;
   left: 0;
   bottom: 0;
-  /* z-index: -1; */
   transition: transform 0.3s ease, height 0.3s ease;
 }
 
@@ -317,7 +323,7 @@ nav ul li {
 
 /* Orange circles */
 .skills .orangeCircle::after {
-  border: 3px solid var(--bright-orange);
+  border: 3px solid var(--cornflower);
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -325,7 +331,6 @@ nav ul li {
   height: 3.12rem;
   left: 0;
   bottom: 0;
-  /* z-index: -1; */
   transition: width 0.2s, height 0.2s, left 0.2s, bottom 0.2s, border-style 0.3s ease;
 }
 
@@ -354,7 +359,7 @@ nav ul li {
 
 /* dark Turquoise circles */
 .skills .darkTurquoiseCircle::after, .skills .darkTurquoiseCircle::before {
-  border: 3px solid var(--dark-turquoise);
+  border: 3px solid var(--terracotta);
   border-radius: 50%;
   content: "";
   position: absolute;
@@ -362,7 +367,6 @@ nav ul li {
   height: 3.12rem;
   left: 0;
   bottom: 0;
-  /* z-index: -1; */
   transition: transform 0.3s ease;
 }
 
@@ -378,6 +382,8 @@ nav ul li {
 
 .experience {
   padding: 0.7rem;
+  position: relative;
+  /* z-index: 1; */
 }
 
 .experience-wrapper {
@@ -388,7 +394,7 @@ nav ul li {
 
 .experience h2 {
   text-transform: uppercase;
-  color: var(--light-turquoise);
+  color: var(--steel);
 }
 
 .experience-wrapper:before {
@@ -399,8 +405,7 @@ nav ul li {
   margin-left: -0.0625rem;
   width: 0.125rem;
   height: 100%;
-  z-index: 1;
-  background: var(--light-turquoise);
+  background: var(--sage);
 }
 
 .timeline-block {
@@ -423,10 +428,9 @@ nav ul li {
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
-  border: 0.3125rem solid var(--dark-turquoise);
-  background: var(--bright-orange);
+  border: 0.3125rem solid var(--steel);
+  background: var(--cornflower);
   margin-top: 0.625rem;
-  z-index: 3;
 }
 
 .timeline-content {
@@ -438,7 +442,7 @@ nav ul li {
 
 .timeline-content h4{
   margin-top: 0.3125rem;
-  color: var(--dark-turquoise);
+  color: var(--steel);
   font-weight: 900;
 }
 
@@ -472,17 +476,17 @@ nav ul li {
 
 .portfolio-wrapper h2 {
   text-transform: uppercase;
-  color: var(--bright-orange);
+  color: var(--steel);
 }
 
 .portfolio-wrapper {
-  background: var(--light-grey);
+  background: var(--neutral-bkgrnd);
   padding: 3rem 0;
 }
 
 .portfolio-image {
   width: 15rem;
-  border: 1px solid var(--bright-orange);
+  border: 2px solid var(--light-steel);
   padding: 0.5rem;
 }
 
@@ -496,11 +500,11 @@ nav ul li {
 .overflow {
   position: absolute;
   opacity: 0;
-  background: var(--dark-grey);
+  background: var(--neutral-bkgrnd);
   width: 15rem;
   height: 100%;
   top: 0;
-  border: 1px solid var(--bright-orange);
+  border: 1px solid var(--steel);
   cursor: pointer;
 }
 
@@ -514,7 +518,7 @@ nav ul li {
   opacity: 0;
   margin-left: -8rem;
   margin-top: 4.5rem;
-  color: var(--bright-orange);
+  color: var(--steel);
   font-size: 2rem;
 }
 
@@ -579,7 +583,6 @@ nav ul li {
 
 .testimonials {
   background-size: cover;
-  /* background-color: var(--light-grey); */
   text-align: center;
   padding-bottom: 4rem;
   margin-bottom: 0;
@@ -587,7 +590,7 @@ nav ul li {
 }
 
 .testimonials h2 {
-  color: var(--light-turquoise);
+  color: var(--steel);
   padding: 3rem 0;
   text-transform: uppercase;
 }
@@ -596,7 +599,7 @@ nav ul li {
   text-align: center;
   max-width: 53.125rem;
   margin: 0 auto 2rem auto;
-  background: var(--light-turquoise);
+  background: var(--steel);
 }
 
 .myCarousel {
@@ -646,12 +649,12 @@ nav ul li {
 /* ********************** CONTACT ********************** */
 
 .contact {
-  background: var(--light-grey);
+  background: var(--neutral-bkgrnd);
   padding: 3rem 0;
 }
 
 .contact h2 {
-  color: var(--bright-orange);
+  color: var(--steel);
   padding: 1.3rem 0;
   text-transform: uppercase;
 }
@@ -698,18 +701,18 @@ nav ul li {
   min-width: 7rem;
   float: right;
   text-decoration: none;
-  background-color: var(--bright-orange);
+  background-color: var(--steel);
   color: var(--white);
   transition: .2s ease-in-out;
   border-width: 0.5px;
-  border-color: var(--bright-orange);
+  border-color: var(--steel);
 }
 
 .contact-btn:hover {
-  background-color: var(--light-turquoise);
+  background-color: var(--steel);
   color: var(--white);
   transition: .2s ease-in-out;
-  border-color: var(--light-turquoise);
+  border-color: var(--steel);
 }
 
 .line {
@@ -717,7 +720,7 @@ nav ul li {
   top: -0.8rem;
   width: 0;
   height: 0.125rem;
-  background: var(--bright-orange);
+  background: var(--steel);
   display: inline-block;
 }
 
@@ -736,7 +739,7 @@ textarea.form-control {
 
 .error-message {
   color: var(--white);
-  background: var(--light-turquoise);
+  background: var(--steel);
 }
 
 .success-message {
@@ -766,7 +769,7 @@ textarea.form-control {
  /* ********************** FOOTER ********************** */
 
  .footer {
-   background: var(--dark-turquoise);
+   background: var(--steel);
    color: var(--white);
    padding: 3rem;
  }
@@ -790,13 +793,10 @@ textarea.form-control {
  }
 
  .github:hover {
-   color: var(--lighter-pink);
+   color: var(--cornflower);
  }
 
  .linkedin:hover {
-   color: var(--light-turquoise);
+   color: var(--sage);
  }
 
- .whatsapp:hover {
-   color: var(--bright-orange);
- }

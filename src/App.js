@@ -1,7 +1,6 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from 'react-particles-js'
-import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import AboutMe from "./components/AboutMe";
 import Skills from "./components/Skills";
@@ -29,7 +28,7 @@ function App() {
           line_linked: {
             enable: true,
             distance: 150,
-            color: "#009E98",
+            color: "#607A87",
             opacity: 1,
             width: 1
           },
@@ -38,13 +37,12 @@ function App() {
             stroke: {
               width: 6,
               // color: "#f9ab00"
-              color: "#f9ab00"
+              color: "#F6BC60"
             }
           }
         }}
       }
       />
-      <Navbar />
       <Header />
       <AboutMe />
       <Skills />

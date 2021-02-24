@@ -10,13 +10,10 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
                         <div className="d-flex">
-                            <a href="mailto: sara.neves.pereira@gmail.com" rel="noreferrer" target="_blank">sara.neves.pereira@gmail.com</a>
+                            <a href="mailto: jenkruk@gmail.com" rel="noreferrer" target="_blank">jenkruk@gmail.com</a>
                         </div>
                         <div className="d-flex">
-                            <p>Covering all time zones</p>
-                        </div>
-                        <div className="d-flex">
-                            <p>From California to Portugal</p>
+                            <p>Mesa, AZ</p>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2 col-sm-6">
@@ -39,18 +36,15 @@ const Footer = () => {
                     </div>
                     <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
                         <div className="d-flex justify-content-center">
-                            <a href="https://github.com/SaraNP-33" rel="noreferrer" target="_blank">
+                            <a href="https://github.com/jenkruk" rel="noreferrer" target="_blank">
                                 <div><FontAwesomeIcon className="footerIcon github" icon={faGithubSquare} size="2x" /></div>
                             </a>
-                            <a href="https://www.linkedin.com/in/sara-neves-pereira-8b6509139/" rel="noreferrer" target="_blank">
+                            <a href="https://www.linkedin.com/in/jenkruk/" rel="noreferrer" target="_blank">
                                 <div><FontAwesomeIcon className="footerIcon linkedin" icon={faLinkedin} size="2x" /></div>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=351910531602" rel="noreferrer" target="_blank">
-                                <div><FontAwesomeIcon className="footerIcon whatsapp" icon={faWhatsappSquare} size="2x" /></div>
                             </a>
                         </div>
                         <p className="pt-3 text-center">
-                            Sara Neves Pereira
+                            Jennifer Kruk
                         </p>
                         <p className="pt-3 text-center">
                             Copyright&copy;{new Date().getFullYear()} | All Rights Reserved

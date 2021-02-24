@@ -290,9 +290,9 @@ const openPopupboxProjectEight = () => {
 }
 
     return (
-        <div className="portfolio-wrapper" id="portfolio">
+        <div className="portfolio-wrapper">
             <div className="container">
-                <h2 className="text-uppercase text-center py-5">portfolio</h2>
+                <h2 className="text-uppercase text-center py-5" id="portfolio">portfolio</h2>
                 <div className="image-box-wrapper row justify-content-center">
                     <div className="portfolio-image-box" onClick={openPopupboxProjectOne}>
                         <img className = "portfolio-image" src={projectOne} alt="Project One"/>
