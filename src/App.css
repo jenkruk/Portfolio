@@ -113,6 +113,10 @@ nav ul li {
   font-size: 1.75rem !important;
 }
 
+.headerMenu ul{
+  padding: 0;
+}
+
 .headerMenu ul li{
   display: inline-block;
   text-decoration: none;
@@ -588,27 +592,30 @@ nav ul li {
 
 /* TRAIN SCHEDULER / PORTFOLIO SECTION */
 
+.train-image-box {
+  width: 250px;
+}
+
  .train {
+  color: var(--steel);
   font-family: 'Open Sans Condensed', sans-serif;
   font-weight: bolder;
-  width: 270px;
-  text-align: center;
+  width: 75%;
   display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  font-size: 1.2rem;
+  justify-content: center;
+  padding-top: 1vh;
+  margin: 0 auto !important;
+  font-size: 3rem;
+  letter-spacing: 7px;
 }
 
-#date {
-  color: var(--cornflower);
-}
-
-#day {
-  color: var(--terracotta);
-}
-
-#time {
-  color: var(--sage);
+.subline {
+  color: var(--steel);
+  font-size: 1rem;
+  width: 68%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto !important;
 }
 
 .trainPopUp {

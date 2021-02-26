@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import projectOne from "../images/projectPics/qsm.jpg";
 import projectTwo from "../images/projectPics/zoo.jpg";
 import projectThree from "../images/projectPics/googleBooks.jpg";
 import projectFour from "../images/projectPics/recipe.jpg";
 import projectFive from "../images/projectPics/friendFinder.jpg";
 import projectSix from "../images/projectPics/taskMgr.jpg";
-import projectSeven from "../images/projects/imgSeven.jpg";
 import projectEight from "../images/projectPics/homes.jpg";
 import projectNine from "../images/projectPics/giftStack.gif";
 import projectTen from "../images/projectPics/travelTrivia.jpg";
@@ -231,9 +230,9 @@ const openPopupboxProjectSeven = () => {
   const content = (
     <>
       <div className="portfolio-image-popupbox trainPopUp row inline-block d-flex justify-content-center align-items-center">
-                          <div id="date">{ thisMonth } { day }, { year }</div>
-                          <div id="time">{currentTime}</div>
-                          <div id="day">{ dayOfWeek }'s Train Schedule</div>
+                          {/* <div id="date">{ thisMonth } { day }, { year }</div> */}
+                          <div id="time">{ hours + minutes + seconds }</div>
+                          {/* <div id="day">{ dayOfWeek }'s Train Schedule</div> */}
                         </div>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
@@ -442,23 +441,28 @@ const openPopupboxProjectEight = () => {
       // ******************* CLOCK ******************* 
 
 
-    var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",  "November",  "December"];
-    var thisday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    const day = new Date().getDate();
-    var dayOfWeek = thisday[new Date().getDay()];
-    const thisMonth = month[new Date().getMonth()];
-    const year = new Date().getFullYear();
+    // var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",  "November",  "December"];
+    // var thisday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    // const day = new Date().getDate();
+    // var dayOfWeek = thisday[new Date().getDay()];
+    // const thisMonth = month[new Date().getMonth()];
+    // const year = new Date().getFullYear();
 
-    const time = new Date().toLocaleTimeString();
 
-    const [currentTime, setCurrentTime] = useState(time);
+    // const [clock, setClock] = useState();
+    const [hours, setHours] = useState();
+    const [minutes, setMinutes] = useState();
+    const [seconds, setSeconds] = useState();
 
-    const updatetime = () => {
-        const time = new Date().toLocaleTimeString();
-        setCurrentTime(time);
-    }
-
-    setInterval(updatetime, 1000);
+    useEffect(() => {
+      setInterval(() => {
+        const time = new Date();
+        // setClock(time.toLocaleTimeString());
+        setHours((time.getHours() % 12 || 12) + ":");
+        setMinutes((time.getMinutes()<10?'0':'') + time.getMinutes()  + ":");
+        setSeconds((time.getSeconds()<10?'0':'') + time.getSeconds() );
+      }, 1000);
+    }, []);
 
 
     return (
@@ -503,11 +507,20 @@ const openPopupboxProjectEight = () => {
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box  train-image-box" onClick={openPopupboxProjectSeven}>
-                        <div className="train  px-5 row inline-block h-100 align-items-center">
-                          <div id="date">{ thisMonth } { day }, { year }</div>
-                          <div id="time">{currentTime}</div>
-                          <div id="day">{ dayOfWeek }'s Train Schedule</div>
+                        <div className="train row inline-block">
+                          {/* <div id="date">{ thisMonth } { day }, { year }</div> */}
+                          {/* <div id="time">{ clock }</div> */}
+                          <div id="hours">{ hours }</div>
+                          <div id="minutes">{ minutes }</div>
+                          <div id="seconds">{ seconds }</div>
+
+                          {/* <div id="day">{ dayOfWeek }'s Train Schedule</div> */}
                         </div>
+                        <div className="row subline inline-block">
+                          <p className="inline-block">Hours</p>
+                          <p className="inline-block">Minutes</p>
+                          <p className="inline-block">Seconds</p>
+                          </div>
                         <div className="overlay"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
