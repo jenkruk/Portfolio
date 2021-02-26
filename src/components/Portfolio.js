@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import projectOne from "../images/projectPics/qsm.jpg";
 import projectTwo from "../images/projectPics/zoo.jpg";
 import projectThree from "../images/projectPics/googleBooks.jpg";
@@ -6,7 +6,6 @@ import projectFour from "../images/projectPics/recipe.jpg";
 import projectFive from "../images/projectPics/friendFinder.jpg";
 import projectSix from "../images/projectPics/taskMgr.jpg";
 import projectSeven from "../images/projects/imgSeven.jpg";
-// import currentTime from "./currentTime";
 import projectEight from "../images/projectPics/homes.jpg";
 import projectNine from "../images/projectPics/giftStack.gif";
 import projectTen from "../images/projectPics/travelTrivia.jpg";
@@ -231,7 +230,11 @@ const Portfolio = () => {
 const openPopupboxProjectSeven = () => {
   const content = (
     <>
-      <img className = "portfolio-image-popupbox" src={projectSeven} alt="Train Scheduler"/>
+      <div className="portfolio-image-popupbox trainPopUp row inline-block d-flex justify-content-center align-items-center">
+                          <div id="date">{ thisMonth } { day }, { year }</div>
+                          <div id="time">{currentTime}</div>
+                          <div id="day">{ dayOfWeek }'s Train Schedule</div>
+                        </div>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
       <br/>
@@ -435,6 +438,29 @@ const openPopupboxProjectEight = () => {
       fadeInSpeed: 500
       }
 
+
+      // ******************* CLOCK ******************* 
+
+
+    var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",  "November",  "December"];
+    var thisday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const day = new Date().getDate();
+    var dayOfWeek = thisday[new Date().getDay()];
+    const thisMonth = month[new Date().getMonth()];
+    const year = new Date().getFullYear();
+
+    const time = new Date().toLocaleTimeString();
+
+    const [currentTime, setCurrentTime] = useState(time);
+
+    const updatetime = () => {
+        const time = new Date().toLocaleTimeString();
+        setCurrentTime(time);
+    }
+
+    setInterval(updatetime, 1000);
+
+
     return (
         <div className="portfolio-wrapper">
             <div className="container">
@@ -476,8 +502,12 @@ const openPopupboxProjectEight = () => {
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>
                 {/* - */}
-                    <div className="portfolio-image-box" onClick={openPopupboxProjectSeven}>
-                        <img className = "portfolio-image" src={projectSeven} alt="Train Scheduler"/>
+                    <div className="portfolio-image-box  train-image-box" onClick={openPopupboxProjectSeven}>
+                        <div className="train  px-5 row inline-block h-100 align-items-center">
+                          <div id="date">{ thisMonth } { day }, { year }</div>
+                          <div id="time">{currentTime}</div>
+                          <div id="day">{ dayOfWeek }'s Train Schedule</div>
+                        </div>
                         <div className="overlay"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>

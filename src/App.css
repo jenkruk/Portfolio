@@ -525,7 +525,7 @@ nav ul li {
 .portfolio-icon {
   position: absolute;
   opacity: 0;
-  margin-left: -8rem;
+  margin-left: -8.5rem;
   margin-top: 3.5rem;
   color: var(--steel);
   font-size: 2rem;
@@ -554,8 +554,12 @@ nav ul li {
   text-align: center;
 }
 
-.portfolio-wrapper .container .image-box-wrapper .gif-giver-image-box .portfolio-icon{
-  justify-content: center;
+.gif-giver-image-box svg {
+  margin-left: -60px;
+}
+
+.train-image-box svg {
+  margin: -77px auto 0 105px;
 }
 
 /* ********************** POP-UP BOX ********************** */
@@ -580,6 +584,36 @@ nav ul li {
 
 .hyper-link:hover {
   color: var(--cornflower);
+}
+
+/* TRAIN SCHEDULER / PORTFOLIO SECTION */
+
+ .train {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  width: 270px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+#date {
+  color: var(--cornflower);
+}
+
+#day {
+  color: var(--terracotta);
+}
+
+#time {
+  color: var(--sage);
+}
+
+.trainPopUp {
+  width: 40%;
+  margin: 0 auto !important;
 }
 
 /* ********************** MEDIA ********************** */
