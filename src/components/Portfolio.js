@@ -230,10 +230,13 @@ const openPopupboxProjectSeven = () => {
   const content = (
     <>
       <div className="portfolio-image-popupbox trainPopUp row inline-block d-flex justify-content-center align-items-center">
-                          {/* <div id="date">{ thisMonth } { day }, { year }</div> */}
-                          <div id="time">{ hours + minutes + seconds }</div>
-                          {/* <div id="day">{ dayOfWeek }'s Train Schedule</div> */}
-                        </div>
+        <div id="popUpTime" className="row d-flex justify-content-center">{ hours + minutes + seconds }</div>
+        <div className="row subline sublinePopUp inline-block">
+          <p className="inline-block">Hours</p>
+          <p className="inline-block">Minutes</p>
+          <p className="inline-block">Seconds</p>
+        </div>
+        </div>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
       <br/>
@@ -520,7 +523,7 @@ const openPopupboxProjectEight = () => {
                           <p className="inline-block">Hours</p>
                           <p className="inline-block">Minutes</p>
                           <p className="inline-block">Seconds</p>
-                          </div>
+                        </div>
                         <div className="overlay"></div>
                         <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
                     </div>

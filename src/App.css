@@ -605,7 +605,7 @@ nav ul li {
   justify-content: center;
   padding-top: 1vh;
   margin: 0 auto !important;
-  font-size: 3rem;
+  font-size: 2.75rem;
   letter-spacing: 7px;
 }
 
@@ -618,9 +618,27 @@ nav ul li {
   margin: 0 auto !important;
 }
 
+.sublinePopUp {
+  max-width: 200px !important;
+}
+
+#popUpTime {
+  letter-spacing: 0.75rem;
+  width: 100vw;
+  text-align: center;
+}
+
 .trainPopUp {
-  width: 40%;
+  color: var(--steel);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bolder;
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  padding-top: 1vh;
   margin: 0 auto !important;
+  font-size: 2.75rem;
+  /* letter-spacing: 7px; */
 }
 
 /* ********************** MEDIA ********************** */
