@@ -26,9 +26,9 @@ const Portfolio = () => {
             <>
     <img className = "portfolio-image-popupbox" src={projectOne} alt="Queen St. Market"/>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-    <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+    <b>Demo: </b> <a className="hyper-link" href="https://queen-st-market.herokuapp.com/" rel="noreferrer" target="_blank">https://queen-st-market.herokuapp.com/</a>
     <br/>
-    <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+    <b>GitHub: </b> <a className="hyper-link" href="https://github.com/niashagrant/mern-store" rel="noreferrer" target="_blank">https://github.com/niashagrant/mern-store</a>
     </>
     )
     PopupboxManager.open({ content })
@@ -61,9 +61,9 @@ const Portfolio = () => {
           <>
             <img className = "portfolio-image-popupbox" src={projectTwo} alt="Zootopia"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident        quisrecusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/zootopia/" rel="noreferrer" target="_blank">https://jenkruk.github.io/zootopia/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/zootopia" rel="noreferrer" target="_blank">https://github.com/jenkruk/zootopia</a>
           </>
     )
     PopupboxManager.open({ content });
@@ -95,9 +95,9 @@ const Portfolio = () => {
           <>
             <img className = "portfolio-image-popupbox" src={projectThree} alt="Google Books"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>Demo: </b> <a className="hyper-link" href="https://google-books-search-171113.herokuapp.com/" rel="noreferrer" target="_blank">https://google-books-search-171113.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/googleBooks" rel="noreferrer" target="_blank">https://github.com/SaraNP-33/googleBooks</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -129,9 +129,9 @@ const Portfolio = () => {
           <>
             <img className = "portfolio-image-popupbox" src={projectFour} alt="Recipe Scraper"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>Demo: </b> <a className="hyper-link" href="https://realsimplerecipescraper.herokuapp.com/" rel="noreferrer" target="_blank">https://realsimplerecipescraper.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/scraper" rel="noreferrer" target="_blank">https://github.com/jenkruk/scraper</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -163,9 +163,9 @@ const Portfolio = () => {
           <>
             <img className = "portfolio-image-popupbox" src={projectFive} alt="Friend Finder"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>Demo: </b> <a className="hyper-link" href="https://damp-mountain-00831.herokuapp.com/" rel="noreferrer" target="_blank">https://damp-mountain-00831.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/FriendFinder" rel="noreferrer" target="_blank">https://github.com/jenkruk/FriendFinder</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -197,9 +197,9 @@ const Portfolio = () => {
           <>
             <img className = "portfolio-image-popupbox" src={projectSix} alt="Task Manager"/>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-            <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>Demo: </b> <a className="hyper-link" href="https://quiet-bayou-82536.herokuapp.com/" rel="noreferrer" target="_blank">https://quiet-bayou-82536.herokuapp.com/</a>
             <br/>
-            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+            <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/taskManagerSequel" rel="noreferrer" target="_blank">https://github.com/jenkruk/taskManagerSequel</a>
           </>
     )
         PopupboxManager.open({ content });
@@ -238,9 +238,9 @@ const openPopupboxProjectSeven = () => {
         </div>
         </div>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-      <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/TrainSchedule/" rel="noreferrer" target="_blank">https://jenkruk.github.io/TrainSchedule/</a>
       <br/>
-      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/TrainSchedule" rel="noreferrer" target="_blank">https://github.com/jenkruk/TrainSchedule</a>
     </>
 )
   PopupboxManager.open({ content });
@@ -272,9 +272,9 @@ const openPopupboxProjectEight = () => {
     <>
       <img className = "portfolio-image-popupbox" src={projectEight} alt="Home Finder"/>
       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-      <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <b>Demo: </b> <a className="hyper-link" href="https://hishamss.github.io/Project1-Real-Estate/" rel="noreferrer" target="_blank">https://hishamss.github.io/Project1-Real-Estate/</a>
       <br/>
-      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/hishamss/Project1-Real-Estate" rel="noreferrer" target="_blank">https://github.com/SaraNP-33</a>
     </>
 )
   PopupboxManager.open({ content });
@@ -306,9 +306,9 @@ const openPopupboxProjectEight = () => {
           <>
   <img className = "portfolio-image-popupbox gifGiver" src={projectNine} alt="Gif-Giver"/>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/Gif-Giver/" rel="noreferrer" target="_blank">https://jenkruk.github.io/Gif-Giver/</a>
   <br/>
-  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/Gif-Giver" rel="noreferrer" target="_blank">https://github.com/SaraNP-33</a>
   </>
   )
   PopupboxManager.open({ content })
@@ -341,9 +341,9 @@ const openPopupboxProjectEight = () => {
           <>
   <img className = "portfolio-image-popupbox" src={projectTen} alt="Travel Trivia"/>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/TriviaGame/" rel="noreferrer" target="_blank">https://jenkruk.github.io/TriviaGame/</a>
   <br/>
-  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/TriviaGame" rel="noreferrer" target="_blank">https://github.com/jenkruk/TriviaGame</a>
   </>
   )
   PopupboxManager.open({ content })
@@ -376,9 +376,9 @@ const openPopupboxProjectEight = () => {
           <>
   <img className = "portfolio-image-popupbox" src={projectEleven} alt="Crystal Collector"/>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/unit-4-game/" rel="noreferrer" target="_blank">https://jenkruk.github.io/unit-4-game/</a>
   <br/>
-  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/unit-4-game" rel="noreferrer" target="_blank">https://github.com/jenkruk/unit-4-game</a>
   </>
   )
   PopupboxManager.open({ content })
@@ -411,9 +411,9 @@ const openPopupboxProjectEight = () => {
           <>
   <img className = "portfolio-image-popupbox" src={projectTwelve} alt="Tree of Lives"/>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
-  <b>Demo: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/Word-Guess-Game/" rel="noreferrer" target="_blank">https://jenkruk.github.io/Word-Guess-Game/</a>
   <br/>
-  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33">https://github.com/SaraNP-33</a>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/Word-Guess-Game" rel="noreferrer" target="_blank">https://github.com/jenkruk/Word-Guess-Game</a>
   </>
   )
   PopupboxManager.open({ content })
