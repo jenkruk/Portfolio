@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import Navbar from './Navbar'
 
 const Header = () => {
+    
     return (
         <div className="header-wrapper" id="home">
             <div className="main-info">

@@ -649,6 +649,11 @@ nav ul li {
   /* letter-spacing: 7px; */
 }
 
+
+img .gifGiverPopupImg {
+  height: 300px !important;
+}
+
 /* ********************** MEDIA ********************** */
 
 @media(max-width: 768px) {

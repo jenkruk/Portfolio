@@ -304,7 +304,7 @@ const openPopupboxProjectEight = () => {
     const openPopupboxProjectNine = () => {
       const content = (
           <>
-  <img className = "portfolio-image-popupbox gifGiver" src={projectNine} alt="Gif-Giver"/>
+  <img className = "portfolio-image-popupbox gifGiver gifGiverPopupImg" src={projectNine} alt="Gif-Giver"/>
   <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
   <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/Gif-Giver/" rel="noreferrer" target="_blank">https://jenkruk.github.io/Gif-Giver/</a>
   <br/>
