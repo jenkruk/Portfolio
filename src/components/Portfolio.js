@@ -25,7 +25,7 @@ const Portfolio = () => {
         const content = (
             <>
     <img className = "portfolio-image-popupbox" src={projectOne} alt="Queen St. Market"/>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+    <p>A collaberation full-stack e-commerce store utilizing React Hooks, bCrypt, React-Stripe-Checkout, Passport, MongoDB, Express, Node and Concurrently among others.</p>
     <b>Demo: </b> <a className="hyper-link" href="https://queen-st-market.herokuapp.com/" rel="noreferrer" target="_blank">https://queen-st-market.herokuapp.com/</a>
     <br/>
     <b>GitHub: </b> <a className="hyper-link" href="https://github.com/niashagrant/mern-store" rel="noreferrer" target="_blank">https://github.com/niashagrant/mern-store</a>
@@ -60,7 +60,8 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectTwo} alt="Zootopia"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident        quisrecusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+            <p>A matching game made using React, JSX, ES6, uifx and Bootstrap.</p>
+            <p>How many zoo cards can you click before your memory fails you?</p>
             <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/zootopia/" rel="noreferrer" target="_blank">https://jenkruk.github.io/zootopia/</a>
             <br/>
             <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/zootopia" rel="noreferrer" target="_blank">https://github.com/jenkruk/zootopia</a>
@@ -94,7 +95,8 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectThree} alt="Google Books"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+            <p>A collaberation project utilizing Axios to call the Google Books API.</p>
+            <p>Also utilizes React, Express, MongoDB, Mongoose and Bootstrap.</p>
             <b>Demo: </b> <a className="hyper-link" href="https://google-books-search-171113.herokuapp.com/" rel="noreferrer" target="_blank">https://google-books-search-171113.herokuapp.com/</a>
             <br/>
             <b>GitHub: </b> <a className="hyper-link" href="https://github.com/SaraNP-33/googleBooks" rel="noreferrer" target="_blank">https://github.com/SaraNP-33/googleBooks</a>
@@ -128,7 +130,8 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectFour} alt="Recipe Scraper"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+            <p>A recipe app that scrapes the recipes from Real Simple Magazine.</p>
+            <p>Have you made your quarantine sourdough bread yet?</p>
             <b>Demo: </b> <a className="hyper-link" href="https://realsimplerecipescraper.herokuapp.com/" rel="noreferrer" target="_blank">https://realsimplerecipescraper.herokuapp.com/</a>
             <br/>
             <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/scraper" rel="noreferrer" target="_blank">https://github.com/jenkruk/scraper</a>
@@ -162,7 +165,8 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectFive} alt="Friend Finder"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+            <p>A Friend Matching App made with Node, Express, jQuery, javaScript, and Bootstrap.</p>
+            <p>Because a party of one is just no fun!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://damp-mountain-00831.herokuapp.com/" rel="noreferrer" target="_blank">https://damp-mountain-00831.herokuapp.com/</a>
             <br/>
             <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/FriendFinder" rel="noreferrer" target="_blank">https://github.com/jenkruk/FriendFinder</a>
@@ -196,7 +200,8 @@ const Portfolio = () => {
         const content = (
           <>
             <img className = "portfolio-image-popupbox" src={projectSix} alt="Task Manager"/>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+            <p>A to-do list made with Sequelize, Node, Express, Handlebars, jQuery, javaScript and Bootstrap.</p>
+            <p>Keep on track with this helpful list!</p>
             <b>Demo: </b> <a className="hyper-link" href="https://quiet-bayou-82536.herokuapp.com/" rel="noreferrer" target="_blank">https://quiet-bayou-82536.herokuapp.com/</a>
             <br/>
             <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/taskManagerSequel" rel="noreferrer" target="_blank">https://github.com/jenkruk/taskManagerSequel</a>
@@ -237,7 +242,8 @@ const openPopupboxProjectSeven = () => {
           <p className="inline-block">Seconds</p>
         </div>
         </div>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+      <p>A train scheduler utilizing Momentjs, Firebase, jQuery & javaScript timing events.</p>
+      <p>All Aboard!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/TrainSchedule/" rel="noreferrer" target="_blank">https://jenkruk.github.io/TrainSchedule/</a>
       <br/>
       <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/TrainSchedule" rel="noreferrer" target="_blank">https://github.com/jenkruk/TrainSchedule</a>
@@ -271,10 +277,11 @@ const openPopupboxProjectEight = () => {
   const content = (
     <>
       <img className = "portfolio-image-popupbox" src={projectEight} alt="Home Finder"/>
-      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro veroreprehenderiprovidentquis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+      <p>A collaberation real-estate site utilizing API's from Realtor.com, Google Maps, Yelp & OpenWeather.</p>
+      <p>Find your new home today!</p>
       <b>Demo: </b> <a className="hyper-link" href="https://hishamss.github.io/Project1-Real-Estate/" rel="noreferrer" target="_blank">https://hishamss.github.io/Project1-Real-Estate/</a>
       <br/>
-      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/hishamss/Project1-Real-Estate" rel="noreferrer" target="_blank">https://github.com/SaraNP-33</a>
+      <b>GitHub: </b> <a className="hyper-link" href="https://github.com/hishamss/Project1-Real-Estate" rel="noreferrer" target="_blank">https://github.com/hishamss/Project1-Real-Estate</a>
     </>
 )
   PopupboxManager.open({ content });
@@ -305,10 +312,11 @@ const openPopupboxProjectEight = () => {
       const content = (
           <>
   <img className = "portfolio-image-popupbox gifGiver gifGiverPopupImg" src={projectNine} alt="Gif-Giver"/>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <p>An interactive gif generator utilizing the Giphy API, Bootstrap & the jQuery javaScript library.</p>
+  <p>Enjoy the gifs!</p>
   <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/Gif-Giver/" rel="noreferrer" target="_blank">https://jenkruk.github.io/Gif-Giver/</a>
   <br/>
-  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/Gif-Giver" rel="noreferrer" target="_blank">https://github.com/SaraNP-33</a>
+  <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/Gif-Giver" rel="noreferrer" target="_blank">https://github.com/jenkruk/Gif-Giver</a>
   </>
   )
   PopupboxManager.open({ content })
@@ -340,7 +348,8 @@ const openPopupboxProjectEight = () => {
       const content = (
           <>
   <img className = "portfolio-image-popupbox" src={projectTen} alt="Travel Trivia"/>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <p>A travel quiz made with the jQuery javaScript library and Bootstrap.</p>
+  <p>Show off your world knowledge before the timer runs out!</p>
   <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/TriviaGame/" rel="noreferrer" target="_blank">https://jenkruk.github.io/TriviaGame/</a>
   <br/>
   <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/TriviaGame" rel="noreferrer" target="_blank">https://github.com/jenkruk/TriviaGame</a>
@@ -373,13 +382,14 @@ const openPopupboxProjectEight = () => {
   // projectEleven
     const openPopupboxProjectEleven = () => {
       const content = (
-          <>
+          <p>
   <img className = "portfolio-image-popupbox" src={projectEleven} alt="Crystal Collector"/>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <p>A numbers game made with the jQuery javaScript library and Bootstrap.</p>
+  <p>Collect the correct amount of crystals without going over!</p>
   <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/unit-4-game/" rel="noreferrer" target="_blank">https://jenkruk.github.io/unit-4-game/</a>
   <br/>
   <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/unit-4-game" rel="noreferrer" target="_blank">https://github.com/jenkruk/unit-4-game</a>
-  </>
+  </p>
   )
   PopupboxManager.open({ content })
   PopupboxManager.update({
@@ -410,7 +420,8 @@ const openPopupboxProjectEight = () => {
       const content = (
           <>
   <img className = "portfolio-image-popupbox" src={projectTwelve} alt="Tree of Lives"/>
-  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum iure illum quam nobis impedit libero porro vero reprehenderit provident quis recusandae fugit, voluptatibus quod tempore facilis ab modi sed magni!</p>
+  <p>A word guessing game made with vanilla javaScript and Bootstrap.</p>
+  <p>Can you guess the word before the tree runs out of lives?!</p>
   <b>Demo: </b> <a className="hyper-link" href="https://jenkruk.github.io/Word-Guess-Game/" rel="noreferrer" target="_blank">https://jenkruk.github.io/Word-Guess-Game/</a>
   <br/>
   <b>GitHub: </b> <a className="hyper-link" href="https://github.com/jenkruk/Word-Guess-Game" rel="noreferrer" target="_blank">https://github.com/jenkruk/Word-Guess-Game</a>

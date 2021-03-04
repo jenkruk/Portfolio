@@ -85,6 +85,10 @@ nav ul li {
   background-color: var(--light-steel)
 }
 
+.arrow {
+  font-size: 1rem;
+}
+
 /* ******************** HEADER ************************ */
 
 .header-wrapper {
@@ -194,7 +198,7 @@ nav ul li {
 
 }
 
-/* **************** ABOUT ME *************** */
+/* **************** ABOUT *************** */
 
 .aboutMe {
  height: 40vh;
@@ -231,7 +235,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   margin: 0 auto !important;
-  width: 60%;
+  width: 50%;
   font-size: .95rem;
   color: grey;
   letter-spacing: 2px;
@@ -628,12 +632,14 @@ nav ul li {
 
 .sublinePopUp {
   max-width: 200px !important;
+  padding-bottom: 3vh;
 }
 
 #popUpTime {
   letter-spacing: 0.75rem;
   width: 100vw;
   text-align: center;
+  padding-top: 3vh;
 }
 
 .trainPopUp {
@@ -650,8 +656,10 @@ nav ul li {
 }
 
 
-img .gifGiverPopupImg {
-  height: 300px !important;
+.gifGiverPopupImg {
+  max-height: 240px;
+  max-width: 180px;
+  padding-bottom: 2vh;
 }
 
 /* ********************** MEDIA ********************** */
