@@ -40,7 +40,7 @@ const Header = () => {
                 <div className="headerMenu">
                 <ul className="ml-auto">
                 <li className="nav-item">
-                    <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">about me</Link>
+                    <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">about</Link>
                 </li>
                 <li className="nav-item">
                     <Link smooth={true} to="skills" offset={-110} className="nav-link" href="#">skills</Link>

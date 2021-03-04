@@ -198,7 +198,7 @@ nav ul li {
 
 .aboutMe {
  height: 40vh;
- margin-top: 8vh;
+ margin-top: 3vh;
  overflow: hidden;
  height: auto;
 }
@@ -209,7 +209,7 @@ nav ul li {
   justify-content: center;
   align-items: center;
   padding-bottom: 1vh;
-  padding-top: 3vh;
+  padding-top: 5vh;
 }
 
 .profile-img {
