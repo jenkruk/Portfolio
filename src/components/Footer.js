@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-6">
+                    <div className="col-sm-4">
                         <div className="row h-100">
                             <div className="col">
                                 <p className="d-flex w-100">
@@ -23,21 +23,7 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-3 col-md-2 col-sm-6">
-                        <div className="row h-100">
-                            <div className="col">
-                                <Link smooth={true} to="about" className="footer-nav" href="#">About Me</Link>
-                                <br/>
-                                <Link smooth={true} to="skills" className="footer-nav" href="#">Skills</Link>
-                            </div>
-                            <div className="col">
-                                <Link smooth={true} to="experience" className="footer-nav" href="#">Experience</Link>
-                                <br/>
-                                <Link smooth={true} to="portfolio" className="footer-nav" href="#">Portfolio</Link>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
+                    <div className="col-sm-4 align-items-center">
                         <div className="d-flex justify-content-center">
                             <a href="https://github.com/jenkruk" rel="noreferrer" target="_blank">
                                 <div><FontAwesomeIcon className="footerIcon github" icon={faGithubSquare} size="2x" /></div>
@@ -46,17 +32,28 @@ const Footer = () => {
                                 <div><FontAwesomeIcon className="footerIcon linkedin" icon={faLinkedin} size="2x" /></div>
                             </a>
                         </div>
-                    </div>
-                    <div className="col-sm-12">
                         <div className="row">
-                        <p className="m-auto">
-                            Copyright&copy;{new Date().getFullYear()} | All Rights Reserved
+                        <p className="m-auto pt-3 copyright">
+                            Copyright &copy;{new Date().getFullYear()} | All Rights Reserved
                         </p>
-                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+                <div className="col-sm-4">
+                        <div className="row h-100">
+                            <div className="col text-right">
+                                <Link smooth={true} to="about" className="" href="#">About</Link>
+                                <br/>
+                                <Link smooth={true} to="skills" className="" href="#">Skills</Link>
+                                <br/>
+                                <Link smooth={true} to="experience" className="" href="#">Experience</Link>
+                                <br/>
+                                <Link smooth={true} to="portfolio" className="" href="#">Portfolio</Link>
+                            </div>
+                        </div>
+                    </div> 
+            </div> 
+        </div> 
+        </div> 
     )
 }
 

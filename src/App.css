@@ -908,6 +908,9 @@ textarea.form-control {
  .footer a:hover {
    cursor: pointer;
    color: var(--white);
+   text-decoration: underline overline;
+   text-underline-position: under;
+   color: white;
  }
 
  .footer p {
@@ -924,5 +927,9 @@ textarea.form-control {
 
  .linkedin:hover {
    color: var(--sage);
+ }
+
+ .copyright {
+   letter-spacing: 1.25px;
  }
 
