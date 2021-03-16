@@ -13,7 +13,8 @@ font-family: 'Raleway', sans-serif; */
   --sage: #8FA35D;
   --terracotta: #CC5329;
   --cornflower: #F6BC60;
-  --neutral: #F6F6F6;
+  /* --neutral: #F6F6F6; */
+  --neutral: #F2F8FB;
 }
 
 body {
@@ -38,14 +39,8 @@ body {
 }
 
 nav {
-  /* background-color: #F2F7FA; */
   background-color: var(--light-steel);
 }
-
-/* .logo {
-  width: 19.25rem;
-  margin-top: -20px;
-} */
 
 /* **************** Menu Links *********************** */
 
@@ -86,10 +81,6 @@ nav ul li {
   background-color: var(--light-steel)
 }
 
-.arrow {
-  font-size: 1rem;
-}
-
 /* ******************** HEADER ************************ */
 
 .header-wrapper {
@@ -121,10 +112,10 @@ nav ul li {
   letter-spacing: 3px;
 }
 
-.main-info h2 {
+/* .main-info h2 {
   text-transform: uppercase;
   font-size: 1.75rem !important;
-}
+} */
 
 .headerMenu ul{
   padding: 0;
@@ -142,9 +133,9 @@ nav ul li {
   font-weight: bolder;
 }
 
-.headerMenu ul li a:hover{
-  text-decoration: overline underline;
-  text-underline-position: under;
+.headerMenu > ul > li a:hover{
+  text-decoration: overline underline !important;
+  text-underline-position: under !important;
 }
 
 /* ********************** MEDIA ********************** */
@@ -259,9 +250,11 @@ nav ul li {
 .skills {
   text-align: center;
   padding-top: 2rem;
-  /* background: var(--neutral); */
   top: 0;
   overflow: hidden;
+  position: relative;
+  border-top: 4px double var(--light-steel);
+  border-bottom: 4px double var(--light-steel);
 }
 
 .skills h2 {
@@ -272,6 +265,7 @@ nav ul li {
 .skillsTagline {
   letter-spacing: 2px;
 }
+
 
 .skills .circle {
   position: relative;
@@ -315,17 +309,16 @@ nav ul li {
 
 /* steel circles */
 .skills .steelCircle::after, .skills .steelCircle::before {
-  border: 3px double var(--steel);
+  border: 5px double var(--steel);
   border-radius: 50%;
   content: "";
   position: absolute;
-  z-index: -2; /* ************************************************** */
+  z-index: -1;
   width: 3.12rem;
   height: 3.12rem;
   left: 0;
   bottom: 0;
   transition: transform 0.3s ease;
-  /* z-index: -2; */
 }
 
 .skills .steelCircle:hover::after {
@@ -342,7 +335,7 @@ nav ul li {
   border-radius: 50%;
   content: "";
   position: absolute;
-  z-index: -2; /* ************************************************** */
+  z-index: -1;
   width: 3.12rem;
   height: 3.12rem;
   left: 0;
@@ -362,11 +355,11 @@ nav ul li {
 
 /* cornflower circles */
 .skills .cornflowerCircle::after {
-  border: 3px solid var(--cornflower);
+  border: 4px double var(--cornflower);
   border-radius: 50%;
   content: "";
   position: absolute;
-  z-index: -2; /* ************************************************** */
+  z-index: -1;
   width: 3.12rem;
   height: 3.12rem;
   left: 0;
@@ -375,7 +368,6 @@ nav ul li {
 }
 
 .skills .cornflowerCircle:hover::after {
-  border-style: double;
   width: 3.85rem;
   height: 3.85rem;
   left: -6px;
@@ -389,7 +381,7 @@ nav ul li {
   border-radius: 50%;
   content: "";
   position: absolute;
-  z-index: -2; /* ************************************************** */
+  z-index: -1;
   width: 3.12rem;
   height: 3.12rem;
   left: 0;
@@ -410,6 +402,7 @@ nav ul li {
 .experience {
   padding: 0.7rem;
   position: relative;
+  z-index: -100;
   /* z-index: 1; */
 }
 
@@ -433,6 +426,7 @@ nav ul li {
   width: 0.125rem;
   height: 100%;
   background: var(--light-steel);
+  z-index: -1;
 }
 
 .timeline-block {
@@ -532,33 +526,53 @@ nav ul li {
   height: 100%;
   top: 0;
   cursor: pointer;
+  transition: all 0.45s ease-in-out;
 }
 
 .portfolio-image-box:hover .overlay {
-  opacity: 60%;
-  transition: 0.3s ease-in-out;
+  opacity: 1;
+  transition: 0.45s ease-in-out;
 }
 
-.portfolio-icon {
+.title {
   position: absolute;
   opacity: 0;
-  margin-left: -8.5rem;
-  margin-top: 3.5rem;
+  top: 4vh;
+  color: var(--white);
+  width: 100%;
+  padding: 0.3rem;
+  border-top: 6px double var(--white);
+  border-bottom: 6px double var(--white);
+  text-align: center;
+  background-color: var(--light-steel);
+  transition: all 0.45s ease-in-out;
+}
+
+.portfolio-image-box:hover .title {
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* .portfolio-icon {
+  position: absolute;
+  opacity: 0;
+  margin-left: -8.3rem;
+  margin-top: 8vh;
   color: var(--steel);
   font-size: 2rem;
-}
+  transition: all 0.35s ease-in-out;
+} */
 
 .portfolio-image-box {
   background-color: var(--white);
   border: 5px double var(--light-steel);
 }
 
-.portfolio-image-box:hover .portfolio-icon {
+/* .portfolio-image-box:hover .portfolio-icon {
   opacity: 100%;
   border-radius: 5px;
-  transition: 0.3s ease-in-out;
   cursor: pointer;
-}
+} */
 
 .gif-giver-image-box .portfolio-image {
   height: 126px;
@@ -571,13 +585,13 @@ nav ul li {
   text-align: center;
 }
 
-.gif-giver-image-box svg {
+/* .gif-giver-image-box svg {
   margin-left: -60px;
 }
 
 .train-image-box svg {
-  margin: -77px auto 0 105px;
-}
+  margin: -2.75vh auto 0 5.5vw;
+} */
 
 /* ********************** POP-UP BOX ********************** */
 
@@ -883,7 +897,7 @@ textarea.form-control {
  .footer {
    background: var(--steel);
    color: var(--white);
-   padding: 3rem;
+   padding: 1.1rem;
  }
 
  .footer a {

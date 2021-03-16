@@ -8,19 +8,24 @@ const Footer = () => {
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-4 col-md-6 col-sm-6 pb-3">
-                        <div className="d-flex">
-                            <a href="mailto: jenkruk@gmail.com" rel="noreferrer" target="_blank">contactkruk@gmail.com</a>
-                        </div>
-                        <div className="d-flex">
-                            <p>Mesa, AZ</p>
+                    <div className="col-lg-4 col-md-6 col-sm-6">
+                        <div className="row h-100">
+                            <div className="col">
+                                <p className="d-flex w-100">
+                                    Jennifer Kruk
+                                </p>
+                                <div className="d-flex w-100">
+                                    <a href="mailto: jenkruk@gmail.com" rel="noreferrer" target="_blank">contactkruk@gmail.com</a>
+                                </div>
+                                <div className="d-flex w-100">
+                                    <p>Mesa, AZ</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div className="col-lg-3 col-md-2 col-sm-6">
-                        <div className="row">
+                        <div className="row h-100">
                             <div className="col">
-                                <Link smooth={true} to="home" className="footer-nav" href="#">Home</Link>
-                                <br/>
                                 <Link smooth={true} to="about" className="footer-nav" href="#">About Me</Link>
                                 <br/>
                                 <Link smooth={true} to="skills" className="footer-nav" href="#">Skills</Link>
@@ -29,8 +34,6 @@ const Footer = () => {
                                 <Link smooth={true} to="experience" className="footer-nav" href="#">Experience</Link>
                                 <br/>
                                 <Link smooth={true} to="portfolio" className="footer-nav" href="#">Portfolio</Link>
-                                <br/>
-                                <Link smooth={true} to="contact" className="footer-nav" href="#">Contact</Link>
                             </div>
                         </div>
                     </div>
@@ -43,12 +46,13 @@ const Footer = () => {
                                 <div><FontAwesomeIcon className="footerIcon linkedin" icon={faLinkedin} size="2x" /></div>
                             </a>
                         </div>
-                        <p className="pt-3 text-center">
-                            Jennifer Kruk
-                        </p>
-                        <p className="pt-3 text-center">
+                    </div>
+                    <div className="col-sm-12">
+                        <div className="row">
+                        <p className="m-auto">
                             Copyright&copy;{new Date().getFullYear()} | All Rights Reserved
                         </p>
+                        </div>
                     </div>
                 </div>
             </div>

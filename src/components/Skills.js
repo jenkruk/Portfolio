@@ -22,7 +22,6 @@ import bootstrapIcon from "../images/skills/bootstrap.png";
 const Skills = () => {
   return (
     <div className="skills">
-    <div className="skillsWrapper">
       <h2 id="skills">skills</h2>
       <div className="skillsTagline font-italic pb-5">
         Pssst.... have a little fun and hover over your favorites!
@@ -148,7 +147,6 @@ const Skills = () => {
             <div>Bootstrap</div>
           </div>
         </div>
-      </div>
       </div>
     </div>
   );

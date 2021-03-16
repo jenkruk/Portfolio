@@ -12,8 +12,8 @@ import projectEleven from "../images/projectPics/crystals.jpg";
 import projectTwelve from "../images/projectPics/treeOfLives.jpg";
 
 // FONTAWESOME IMPORTS
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSearchPlus } from "@fortawesome/free-solid-svg-icons"
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faSearchPlus } from "@fortawesome/free-solid-svg-icons"
 // REACT POPUPBOX
 import { PopupboxManager, PopupboxContainer } from "react-popupbox";
 import "react-popupbox/dist/react-popupbox.css";
@@ -455,14 +455,6 @@ const openPopupboxProjectEight = () => {
       // ******************* CLOCK ******************* 
 
 
-    // var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October",  "November",  "December"];
-    // var thisday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    // const day = new Date().getDate();
-    // var dayOfWeek = thisday[new Date().getDay()];
-    // const thisMonth = month[new Date().getMonth()];
-    // const year = new Date().getFullYear();
-
-
     // const [clock, setClock] = useState();
     const [hours, setHours] = useState();
     const [minutes, setMinutes] = useState();
@@ -487,48 +479,50 @@ const openPopupboxProjectEight = () => {
                     <div className="portfolio-image-box" onClick={openPopupboxProjectOne}>
                         <img className = "portfolio-image" src={projectOne} alt="Queen St. Market"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Queen Street Market</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectTwo}>
                         <img className = "portfolio-image" src={projectTwo} alt="Zootopia"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Zootopia</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectThree}>
                         <img className = "portfolio-image" src={projectThree} alt="Google Books"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Google Books</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectFour}>
                         <img className = "portfolio-image" src={projectFour} alt="Recipe Scraper"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Recipe Scraper</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box"  onClick={openPopupboxProjectFive}>
                         <img className = "portfolio-image" src={projectFive} alt="Friend Finder"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Friend Finder</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectSix}>
                         <img className = "portfolio-image" src={projectSix} alt="Task Manager"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Task Manager</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box  train-image-box" onClick={openPopupboxProjectSeven}>
                         <div className="train row inline-block">
-                          {/* <div id="date">{ thisMonth } { day }, { year }</div> */}
-                          {/* <div id="time">{ clock }</div> */}
                           <div id="hours">{ hours }</div>
                           <div id="minutes">{ minutes }</div>
                           <div id="seconds">{ seconds }</div>
-
-                          {/* <div id="day">{ dayOfWeek }'s Train Schedule</div> */}
                         </div>
                         <div className="row subline inline-block">
                           <p className="inline-block">Hours</p>
@@ -536,37 +530,43 @@ const openPopupboxProjectEight = () => {
                           <p className="inline-block">Seconds</p>
                         </div>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Train Scheduler</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectEight}>
                         <img className = "portfolio-image" src={projectEight} alt="Home Finder"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Home Finder</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                     {/* - */}
                     <div className="portfolio-image-box gif-giver-image-box" onClick={openPopupboxProjectNine}>
                         <img className = "portfolio-image" src={projectNine} alt="Gif-Giver"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Gif Giver</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                     {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectTen}>
                         <img className = "portfolio-image" src={projectTen} alt="Travel Trivia"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Travel Trivia</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                     {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectEleven}>
                         <img className = "portfolio-image" src={projectEleven} alt="Crystal Collector"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Crystal Collector</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                     {/* - */}
                     <div className="portfolio-image-box" onClick={openPopupboxProjectTwelve}>
                         <img className = "portfolio-image" src={projectTwelve} alt="Tree of Lives"/>
                         <div className="overlay"></div>
-                        <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} />
+                        <h4 className="title">Tree of Lives</h4>
+                        {/* <FontAwesomeIcon className="portfolio-icon" icon={faSearchPlus} /> */}
                     </div>
                 </div>
             </div>
