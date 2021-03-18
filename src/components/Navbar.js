@@ -20,7 +20,7 @@ const Navbar = () => {
     return (
     <nav className={navbar ? 'navbar active navbar-expand-lg fixed-top' : 'navbar navbar-expand-lg fixed-top'}>
         <div className="container">
-        <h2 className="navbar-brand" href="#">Jennifer Kruk</h2>
+        <div className="navbar-brand" href="#">Jennifer Kruk</div>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <FontAwesomeIcon icon={faBars} style={{ color: "#fff"}}/>
             </button>

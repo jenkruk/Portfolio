@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 
 const Footer = () => {
     return (
-        <div className="footer">
+        <div className="footer pb-5 text-nowrap">
             <div className="container">
                 <div className="row">
                     <div className="col-sm-4">
@@ -24,7 +24,7 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="col-sm-4 align-items-center">
-                        <div className="d-flex justify-content-center">
+                        <div className="d-flex justify-content-center mb-3">
                             <a href="https://github.com/jenkruk" rel="noreferrer" target="_blank">
                                 <div><FontAwesomeIcon className="footerIcon github" icon={faGithubSquare} size="2x" /></div>
                             </a>
@@ -32,10 +32,13 @@ const Footer = () => {
                                 <div><FontAwesomeIcon className="footerIcon linkedin" icon={faLinkedin} size="2x" /></div>
                             </a>
                         </div>
-                        <div className="row">
-                        <p className="m-auto pt-3 copyright">
-                            Copyright &copy;{new Date().getFullYear()} | All Rights Reserved
-                        </p>
+                        <div className="row d-block text-center">
+                        <span className="m-auto copyright">
+                            Copyright &copy;{new Date().getFullYear()}
+                        </span>
+                        <span className="m-auto d-block">
+                            All Rights Reserved
+                        </span>
                     </div>
                 </div>
                 <div className="col-sm-4">

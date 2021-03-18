@@ -28,50 +28,33 @@ const Skills = () => {
       </div>
       <div className="container pb-5">
         <div className="row pb-3">
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+          <div className="col-sm-3 col-6">
             <div className="circle steelCircle">
               <FontAwesomeIcon className="icon" icon={faReact} size="2x" />
             </div>
-            <div>React</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">React</div>
             <div className="circle sageCircle">
               <FontAwesomeIcon className="icon" icon={faNodeJs} size="2x" />
             </div>
-            <div>Node JS</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">Node JS</div>
             <div className="circle cornflowerCircle">
               <FontAwesomeIcon className="icon" icon={faJs} size="2x" />
             </div>
-            <div>JavaScript</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">JavaScript</div>
             <div className="circle terracottaCircle">
               <FontAwesomeIcon className="icon" icon={faGitSquare} size="2x" />
             </div>
-            <div>Git</div>
+            <div className="skillName mb-3">Git</div>
           </div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+          <div className="col-sm-3 col-6">
             <div className="circle terracottaCircle">
               <FontAwesomeIcon className="icon" icon={faHtml5} size="2x" />
             </div>
-            <div>Html</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">Html</div>
             <div className="circle steelCircle">
               <FontAwesomeIcon className="icon" icon={faCss3Alt} size="2x" />
             </div>
-            <div>CSS</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">CSS</div>
             <div className="circle sageCircle">
               <img
                 className="skillsLogo icon jQueryIcon"
@@ -79,72 +62,47 @@ const Skills = () => {
                 alt=""
               />
             </div>
-            <div>jQuery</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">jQuery</div>
             <div className="circle cornflowerCircle">
               <img className="skillsLogo icon" src={mongoDbIcon} alt="" />
             </div>
-            <div>MongoDB</div>
+            <div className="skillName mb-3">MongoDB</div>
           </div>
-        </div>
-        <div className="row pb-3">
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+          <div className="col-sm-3 col-6">
             <div className="circle cornflowerCircle">
               <img className="skillsLogo icon" src={jsonIcon} alt="" />
             </div>
-            <div>JSON</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">JSON</div>
             <div className="circle terracottaCircle">
               <img className="skillsLogo icon" src={sqlIcon} alt="" />
             </div>
-            <div>SQL</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">SQL</div>
             <div className="circle steelCircle">
               <img className="skillsLogo icon" src={postmanIcon} alt="" />
             </div>
-            <div>Postman</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">Postman</div>
             <div className="circle sageCircle">
               <img className="skillsLogo icon" src={sequelizeIcon} alt="" />
             </div>
-            <div>Sequelize</div>
+            <div className="skillName mb-3">Sequelize</div>
           </div>
-        </div>
-        <div className="row">
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+          <div className="col-sm-3 col-6">
             <div className="circle sageCircle">
               <img className="skillsLogo icon" src={ajaxIcon} alt="" />
             </div>
-            <div>Ajax</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">Ajax</div>
             <div className="circle cornflowerCircle">
               <img className="skillsLogo icon" src={herokuIcon} alt="" />
             </div>
-            <div>Heroku</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">Heroku</div>
             <div className="circle terracottaCircle">
               <img className="skillsLogo icon" src={agileIcon} alt="" />
             </div>
-            <div>Agile</div>
-          </div>
-          {/* - */}
-          <div className="col-lg-3 col-md-3 col-sm-3 ">
+            <div className="skillName mb-3">Agile</div>
             <div className="circle steelCircle">
               <img className="skillsLogo icon" src={bootstrapIcon} alt="" />
             </div>
-            <div>Bootstrap</div>
+            <div className="skillName mb-3">Bootstrap</div>
           </div>
         </div>
       </div>
