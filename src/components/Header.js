@@ -9,7 +9,6 @@ const Header = () => {
         <div className="header-wrapper" id="home">
             <div className="main-info">
                 <h1>Jennifer Kruk</h1>
-                {/* <h2 className="pb-3 title">Full Stack Web Developer</h2> */}
                 <Typed className="typed-text"
                 strings={
                     [
