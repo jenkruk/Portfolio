@@ -1,3 +1,4 @@
+
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from 'react-particles-js'
@@ -11,7 +12,10 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 
+
+
 function App() {
+
 
   return (
     <>

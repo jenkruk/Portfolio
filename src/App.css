@@ -55,8 +55,17 @@ nav a.nav-link {
   cursor: pointer;
 }
 
+nav ul {
+  padding-right: 5vw;
+}
+
 nav ul li {
   text-transform: uppercase;
+}
+
+.navbar {
+  width: 100vw;
+  padding: 0!important;
 }
 
 .navbar-nav > li > a {
@@ -75,8 +84,13 @@ nav ul li {
   text-underline-position: under;
 }
 
+.navbar-toggler {
+  margin-right: 5vw;
+}
+
 .navbar-collapse {
-  background-color: var(--light-steel)
+  background-color: var(--light-steel);
+  padding-bottom: 2vh;
 }
 
 /* ******************** HEADER ************************ */
