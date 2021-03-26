@@ -1,7 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
 import { Link } from 'react-scroll';
-import Navbar from './Navbar'
 
 const Header = () => {
     
@@ -35,25 +34,24 @@ const Header = () => {
                 backSpeed={60}
                 loop
                 />
-                <Navbar />
                 <div className="headerMenu">
-                <ul className="ml-auto">
-                <li className="nav-item">
-                    <Link smooth={true} to="about" offset={-110} className="nav-link" href="#">about</Link>
-                </li>
-                <li className="nav-item">
-                    <Link smooth={true} to="skills" offset={-110} className="nav-link" href="#">skills</Link>
-                </li>
-                <li className="nav-item">
-                    <Link smooth={true} to="experience" offset={-110} className="nav-link" href="#">experience</Link>
-                </li>
-                <li className="nav-item">
-                    <Link smooth={true} to="portfolio" offset={-110} className="nav-link" href="#">portfolio</Link>
-                </li>
-                <li className="nav-item">
-                    <Link smooth={true} to="contact" offset={-110} className="nav-link" href="#">contact</Link>
-                </li>
-            </ul>
+                    <ul className="ml-auto">
+                        <li className="nav-item">
+                            <Link smooth={true} to="about" offset={-100} className="nav-link" href="#">about</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link smooth={true} to="skills" offset={-90} className="nav-link" href="#">skills</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link smooth={true} to="experience" offset={-100} className="nav-link" href="#">experience</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link smooth={true} to="portfolio" offset={-100} className="nav-link" href="#">portfolio</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link smooth={true} to="contact" offset={-100} className="nav-link" href="#">contact</Link>
+                        </li>
+                    </ul>
             </div>
             </div>
         </div>
