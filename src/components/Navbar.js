@@ -28,8 +28,9 @@ const Navbar = () => {
     }
 
     const revealNav = () => {
+        setOpen(false);
         if (window.scrollY >= 400) {
-            setNavbar(true)
+            setNavbar(true);
         } else {
             setNavbar(false);
         }
