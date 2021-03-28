@@ -42,7 +42,7 @@ const Contact = () => {
                 <span className="success-message text-muted font-italic">{successMessage}</span>
             </div>
         <div className="container">
-            <form  autocomplete="off" onSubmit={handleSubmit(onSubmit)}>
+            <form  autoComplete="off" onSubmit={handleSubmit(onSubmit)}>
             <div className="row">
                 <div className="col-md-6 col-xs-12">
                     {/* NAME INPUT  */}

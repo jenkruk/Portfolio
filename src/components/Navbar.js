@@ -10,6 +10,7 @@ const Navbar = () => {
     const [navbar, setNavbar] = useState(false);
     const [open, setOpen] = useState(false);
 
+
     const handleClick = (e) => {
         e.preventDefault();
         const hideMenu = document.getElementById("navbarSupportedContent");
@@ -28,27 +29,24 @@ const Navbar = () => {
     }
 
     const revealNav = () => {
-        setOpen(false);
         if (window.scrollY >= 400) {
             setNavbar(true);
-        } else {
+            }
             setNavbar(false);
-        }
-    }
+        };
+
         window.addEventListener("scroll", revealNav)
 
     return (
-    <nav className={navbar ? 'navbar active navbar-expand-lg fixed-top' : 'navbar navbar-expand-lg fixed-top'} >
-        {/* <div className="container"> */}
+    <nav className={navbar ? 'navbar active navbar-expand-lg fixed-top fixedNav' : 'navbar navbar-expand-lg fixed-top fixedNav'} >
             <div className="navbar-brand pl-5" href="#">Jennifer Kruk</div>
                 <button className="navbar-toggler" id="toggler"  onClick={handleState} type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <FontAwesomeIcon icon={faBars} style={{ color: "#fff"}} />
                 </button>
-            {/* </div> */}
             <div className="navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item active">
-                        <Link smooth={true} to="home" offset={-100} className="nav-link pt-4" href="#" onClick={handleClick}>⇧top<span className="sr-only">(current)</span></Link>
+                        <Link smooth={true} to="home" offset={-100} className="nav-link" href="#" onClick={handleClick}>⇧top<span className="sr-only">(current)</span></Link>
                     </li>
                     <li className="nav-item">
                         <Link smooth={true} to="about" offset={-100} className="nav-link" href="#" onClick={handleClick}>about</Link>
