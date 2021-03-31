@@ -1,4 +1,5 @@
-
+import React from "react";
+import {BrowserRouter as Router} from "react-router-dom";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import Particles from 'react-particles-js'
@@ -42,15 +43,15 @@ function App() {
             type: "star",
             stroke: {
               width: 3,
-              // color: "#f9ab00"
               color: "#F6BC60"
             }
           }
         }}
       }
       />
-      <Header />
+      <Router>
       <Navbar />
+      <Header />
       <AboutMe />
       <Skills />
       <Experience />
@@ -58,6 +59,7 @@ function App() {
       <References />
       <Contact />
       <Footer />
+      </Router>
     </>
   );
 }
