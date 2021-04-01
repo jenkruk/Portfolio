@@ -3,6 +3,7 @@ import kyle from "../images/koala.jpg";
 
 const AboutMe = () => {
     return (
+        <>
         <div className="container aboutMe">
             <div className="photo-wrap" id="about">
                 <img className="profile-img"  src={kyle} alt="Kyle the Koala"/>
@@ -23,6 +24,7 @@ const AboutMe = () => {
                 </p>
             </div>
         </div>
+    </>
     )
 }
 

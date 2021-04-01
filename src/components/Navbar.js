@@ -1,12 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-scroll";
 
 const Navbar = () => {
 
     const [isMobile, setIsMobile] = useState(false);
-  
+    const [navVisible, setNavVisible] = useState("appBarTransparent")
+
+    const navRef = React.useRef();
+    navRef.current = navVisible;
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 550;
+
+            if(show) {
+                setNavVisible('fixed-navbar');
+                console.log("navbar is visible");
+            } else {
+                setNavVisible("appBarTransparent");
+                console.log("navbar is invisible");
+            }
+        }
+            document.addEventListener('scroll', handleScroll)
+            return () => {
+            document.removeEventListener('scroll', handleScroll)
+            }
+        }, [])
+
     return (
-        <div className="fixed-navbar">
+        <div id="nav" className={navRef.current}>
             <h3 className="name">Jennifer Kruk</h3>
             <ul className={isMobile? "nav-links-mobile" : "nav-links"}>
                 <Link smooth={true} to="home" offset={-100} href="#" className="nav-home">

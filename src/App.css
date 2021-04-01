@@ -134,6 +134,18 @@ body {
 
 /* ******************** NAVBAR ************************ */
 
+.appBarTransparent {
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 75px;
+  background-color: var(--light-steel);
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  top: 100;
+}
+
 .fixed-navbar {
   display: flex;
   justify-content: space-around;
@@ -143,6 +155,7 @@ body {
   position: fixed;
   z-index: 1;
   width: 100vw;
+  top: 100;
 }
 
 .name {
