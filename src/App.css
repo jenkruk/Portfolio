@@ -360,6 +360,14 @@ body {
   padding: 0 1vw 1vh 1vw;
 }
 
+@media(max-width: 415px) {
+
+  .koalaRow {
+    width: 100vw;
+  }
+  }
+
+
 @media(max-width: 999px) {
   .photo-wrap {
     grid-column: 1/9;
