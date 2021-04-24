@@ -1118,11 +1118,31 @@ textarea.form-control {
    padding-right: 5vw;
  }
 
+ .github a .icon,
+ .linkedin a .icon {
+   min-width: 60px;
+   min-height: 60px;
+   padding: 0.3rem;
+ }
+
+ .github p,
+ .linkedin p {
+   cursor: default;
+ }
+ .github p {
+   padding-right: .3rem;
+ }
+
+ .linkedin p {
+   padding-left: .3rem;
+ }
+
  .copyright {
    grid-column: 3/7;
    grid-row: 2/3;
    text-align: center;
    font-size: .9rem;
+   margin-top: 3vh;
  }
 
  .footer a {
@@ -1140,12 +1160,16 @@ textarea.form-control {
    margin-bottom: 0;
  }
 
- .github a:hover {
-   color: var(--cornflower);
+ .github a .icon:hover{
+   /* color: var(--cornflower); */
+   border: 3px double white;
+   border-radius: 10px;
  }
 
- .linkedin a:hover {
-   color: var(--sage);
+ .linkedin a .icon:hover {
+   /* color: var(--sage); */
+   border: 3px double white;
+   border-radius: 10px;
  }
 
 
