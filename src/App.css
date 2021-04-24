@@ -1169,17 +1169,21 @@ textarea.form-control {
 
  .footer a {
    color: var(--white);
+   /* background: purple; */
+   padding: 2px 0;
  }
 
  .footer a:hover {
    cursor: pointer;
    color: var(--white);
-   text-decoration: underline overline;
-   text-underline-position: under;
+   text-decoration: none;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
  }
 
  .footer p {
    margin-bottom: 0;
+   /* background-color: orange; */
  }
 
 
