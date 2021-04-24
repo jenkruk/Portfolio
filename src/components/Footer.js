@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="infoRow">
         <p className="footer-name">Jennifer Kruk</p>
         <div className="email">
-          <a href="mailto: jenkruk@gmail.com" rel="noreferrer" target="_blank">
+          <a href="mailto: contactkruk@gmail.com" rel="noreferrer" target="_blank">
             contactkruk@gmail
           </a>
         </div>
