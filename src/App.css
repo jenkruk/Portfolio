@@ -1120,21 +1120,14 @@ textarea.form-control {
 
  .github a .icon,
  .linkedin a .icon {
-   min-width: 60px;
-   min-height: 60px;
+   min-width: 50px;
+   min-height: 50px;
    padding: 0.3rem;
  }
 
  .github p,
  .linkedin p {
    cursor: default;
- }
- .github p {
-   padding-right: .3rem;
- }
-
- .linkedin p {
-   padding-left: .3rem;
  }
 
  .copyright {
