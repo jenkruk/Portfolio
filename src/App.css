@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap');
-/* font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Raleway', sans-serif; */
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto:wght@100&family=Raleway&display=swap');
 
 
 :root {
@@ -172,7 +171,7 @@ body {
 
 .name {
   font-size: 2.5rem;
-  color: white;
+  color: var(--white);
   cursor: default;
 }
 
@@ -192,7 +191,7 @@ body {
 .nav-references,
 .nav-contact {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   padding: 0 0.3vw;
   margin: 1vh 0.5vw 0 0;
   cursor: pointer;
@@ -208,7 +207,7 @@ body {
 .nav-portfolio:hover,
 .nav-references:hover,
 .nav-contact:hover {
-  color: white;
+  color: var(--white);
   text-decoration: underline overline;
   text-underline-position: under;
 }
@@ -218,13 +217,17 @@ body {
 }
 
 .diamond {
-  color: white;
+  color: var(--white);
   margin-top: 0.9vh;
   margin-right: 0.5vw;
 }
 
 .close {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  margin: 1vh 3vw;
+  font-style: normal;
+  color: var(--white) !important;
 }
 
 @media (max-width: 940px) {
@@ -235,10 +238,7 @@ body {
     left: 35px;
   }
 
-  .diamond {
-    display: none;
-  }
-
+  .diamond,
   .nav-links {
     display: none;
   }
@@ -264,7 +264,7 @@ body {
 .nav-portfolio,
 .nav-references,
 .nav-contact {
-  color: white;
+  color: var(--white);
   text-align: center;
   padding: 32px;
   width: 100%;
@@ -275,7 +275,7 @@ body {
   display: block;
   position: absolute;
   font-size: 30px;
-  color: white;
+  color: var(--white);
   background-color: var(--light-steel);
   border: none;
   outline: none;

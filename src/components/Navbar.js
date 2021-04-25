@@ -10,6 +10,7 @@ const Navbar = () => {
     navRef.current = navVisible;
 
     useEffect(() => {
+
         const handleScroll = () => {
             const show = window.scrollY > 550;
 
@@ -61,7 +62,7 @@ const Navbar = () => {
             </ul>
             <button className="mobile-menu-icon"
             onClick={() => setIsMobile(!isMobile)}>
-                {isMobile ? (<i className="close text-white">X</i>) : (<i className="fas fa-bars fa-xs"></i>)}
+                {isMobile ? (<i className="close">X</i>) : (<i className="fas fa-bars fa-xs"></i>)}
             </button>
         </div>
     )
