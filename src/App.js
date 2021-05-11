@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {BrowserRouter as Router} from "react-router-dom";
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -12,11 +12,17 @@ import Portfolio from "./components/Portfolio";
 import References from "./components/References";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ReactGA from "react-ga";
 
 
 
 
 function App() {
+  
+  useEffect(()=> {
+    ReactGA.initialize('G-F6SWW95DMN');
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, [])
 
   return (
     <>

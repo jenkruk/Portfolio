@@ -16,10 +16,10 @@ const Navbar = () => {
 
             if(show) {
                 setNavVisible('fixed-navbar');
-                console.log("navbar is visible");
+                // console.log("navbar is visible");
             } else {
                 setNavVisible("appBarTransparent");
-                console.log("navbar is invisible");
+                // console.log("navbar is invisible");
             }
         }
             document.addEventListener('scroll', handleScroll)
