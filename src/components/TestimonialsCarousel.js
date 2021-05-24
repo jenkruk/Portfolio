@@ -16,7 +16,7 @@ const TestimonialsCarousel = () => {
         interval={7000}
         >
             <>
-            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEGzogFScsa5w/profile-displayphoto-shrink_800_800/0/1554162300050?e=1621468800&v=beta&t=zH6DDK22KZuwb8gQl6iSawjEfKLL84URSRFINuZqa7o" alt="John Doe 1"/>
+            <img src="https://media-exp1.licdn.com/dms/image/C4E03AQEGzogFScsa5w/profile-displayphoto-shrink_800_800/0/1554162300050?e=1627516800&v=beta&t=WiKT3_WtXyHVAJx2J_WPS0bbKpLjV9Qqm31PIT7MLWg" alt="Greg Mash"/>
             <div className="myCarousel">
             <h3>Gregory Mash</h3>
             <span className="w-100 display-flex "><i className="fas fa-quote-left fa-2x float-left mr-4"></i></span>
@@ -24,7 +24,7 @@ const TestimonialsCarousel = () => {
             </div>
             </>
             <>
-            <img src="https://media-exp1.licdn.com/dms/image/C5603AQHOHOUTOZoWrw/profile-displayphoto-shrink_800_800/0/1595273711043?e=1621468800&v=beta&t=wiFfOcWltglS1WyyYG5oIKTrFz0BFHxuhxJtvvk6qD4 "alt="Jane Doe 2"/>
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQHOHOUTOZoWrw/profile-displayphoto-shrink_800_800/0/1595273711043?e=1627516800&v=beta&t=Jht_8LTQ458yedIDFLZDmkIlOnHJidv3G3HkqC9_JL4"alt="Sara Neves Pereira"/>
             <div className="myCarousel">
             <h3>Sara Neves Pereira</h3>
             <span className="w-100 display-flex "><i className="fas fa-quote-left fa-2x float-left mr-4"></i></span>
@@ -32,7 +32,7 @@ const TestimonialsCarousel = () => {
             </div>
             </>
             <>
-            <img src="https://media-exp1.licdn.com/dms/image/C5603AQG-YPaE47Tf_Q/profile-displayphoto-shrink_800_800/0/1605124929056?e=1621468800&v=beta&t=TgSVEuPr9KXG2whIXXZHkikFa9kpuE5IGJMhSGjialo" alt="John Doe 3"/>
+            <img src="https://media-exp1.licdn.com/dms/image/C5603AQG-YPaE47Tf_Q/profile-displayphoto-shrink_800_800/0/1605124929056?e=1627516800&v=beta&t=qdVjq3sFaRoj0VDwFpCbHK2k24hToEXC7jmqWNO_wz0" alt="Hisham Saymeh"/>
             <div className="myCarousel">
             <h3>Hisham Saymeh</h3>
             <span className="w-100 display-flex "><i className="fas fa-quote-left fa-2x float-left mr-4"></i></span>
