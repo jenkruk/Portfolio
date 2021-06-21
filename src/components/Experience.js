@@ -11,9 +11,8 @@ const Experience = () => {
           <div className="marker"></div>
           <div className="timeline-content">
             <h4>Nov 2020 - <span>Current</span></h4>
-            <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>Tutor</b> | 2U 
-            <p> Online Tutor for students that attend coding bootcamps through 2U/Trilogy
-              in <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>full stack</b> and <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>UI/UX </b>applications including <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>Javascript, jQuery, HTML,
+            <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>Full Stack Coding Tutor</b> | 2U 
+              in <p>Tutoring future <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>Full Stack</b> Developers and <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>UI/UX </b>Designers who attend bootcamps through 2U/Trilogy in multiple applications including <b style={{fontWeight: "bolder", color: "black", letterSpacing: "2px"}}>Javascript, jQuery, HTML,
               CSS, Bootstrap, MongoDB, React, Node, Express.js, Responsive Design,
               GitHub</b> et al
             </p>
